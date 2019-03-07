@@ -1,0 +1,7 @@
+setup.py
+src/easy_dexnet.egg-info/PKG-INFO
+src/easy_dexnet.egg-info/SOURCES.txt
+src/easy_dexnet.egg-info/dependency_links.txt
+src/easy_dexnet.egg-info/top_level.txt
+src/easydexnet/__init__.py
+src/easydexnet/test.py
