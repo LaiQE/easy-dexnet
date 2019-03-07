@@ -50,6 +50,7 @@ class BaseMesh(object):
 
     def _process_mesh(self, trimesh_obj):
         ''' 用来预处理mesh数据,这里只是简单的调用了trimesh的预处理程序 '''
+        # TODO 可以补上对物体水密性的处理
         if not trimesh_obj._validate:
             trimesh_obj._validate = True
             trimesh_obj.process()
