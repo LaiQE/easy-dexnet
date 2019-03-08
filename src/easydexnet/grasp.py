@@ -44,13 +44,16 @@ class Grasp_2f(object):
         # 指向point1的向量
         direction = point1 - point0
 
-        # TODO 这里无法确保法线的方向为向外
         c0_normal = mesh.tri_mesh.face_normals[cell_ids[0]]
         c0_moment_arm = points[0] - mesh.center_mass
+        if np.dot(direction, c0_normal) > 0:
+            c0_normal = -c0_normal
         c0 = Contact(points[0], c0_normal, direction, c0_moment_arm)
 
         c1_normal = mesh.tri_mesh.face_normals[cell_ids[-1]]
         c1_moment_arm = points[-1] - mesh.center_mass
+        if np.dot(-direction, c1_normal) > 0:
+            c1_normal = -c1_normal
         c1 = Contact(points[-1], c1_normal, -direction, c1_moment_arm)
         return True, c0, c1
 
