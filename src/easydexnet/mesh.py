@@ -17,10 +17,18 @@ class BaseMesh(object):
         self._trimesh_obj = self._process_mesh(trimesh_obj)
         # 一个tvtk中的obb对象,用来计算相交线
         self._obb_tree = self._generate_obbtree(self._trimesh_obj)
+        if self._trimesh_obj.is_watertight:
+            self._center_mass = self._trimesh_obj.center_mass
+        else:
+            self._center_mass = self._trimesh_obj.centroid
 
     @property
     def tri_mesh(self):
         return self._trimesh_obj
+    
+    @property
+    def center_mass(self):
+        return self._center_mass
 
     def intersect_line(self, lineP0, lineP1):
         ''' 计算与线段相交的交点，这里调用了tvtk的方法
