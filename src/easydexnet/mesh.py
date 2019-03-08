@@ -19,7 +19,7 @@ class BaseMesh(object):
         self._obb_tree = self._generate_obbtree(self._trimesh_obj)
 
     @property
-    def mesh(self):
+    def tri_mesh(self):
         return self._trimesh_obj
 
     def intersect_line(self, lineP0, lineP1):

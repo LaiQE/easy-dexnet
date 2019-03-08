@@ -11,6 +11,7 @@ class StablePoses(object):
 
     @staticmethod
     def from_raw_poses(raw_poses):
-        _poses = []
+        poses = []
         for matrix, probability in zip(*raw_poses):
-            _poses.append(StablePoses(matrix, probability))
+            poses.append(StablePoses(matrix, probability))
+        return poses
