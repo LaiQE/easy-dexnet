@@ -1,11 +1,13 @@
 import numpy as np
 import logging
 
+
 class Contact(object):
     """ 接触点类型，表示一个接触点
         主要用来计算接触点的摩擦锥
     """
-    def __init__(self, point, normal, grasp_direction, moment_arm):
+
+    def __init__(self, point, normal, grasp_direction, moment_arm=None):
         """
         point: 接触点在物体坐标系的坐标点
         normal: 接触点所在面片的法线, 方向向外
@@ -14,18 +16,19 @@ class Contact(object):
         """
         self._point = point
         self._normal = normal / np.linalg.norm(normal)
-        self._grasp_direction = grasp_direction / np.linalg.norm(grasp_direction)
+        self._grasp_direction = grasp_direction / \
+            np.linalg.norm(grasp_direction)
         self._moment_arm = moment_arm
         self._friction_cone = None
-    
+
     @property
     def point(self):
-        return self._point  
-    
+        return self._point
+
     @property
     def normal(self):
         return self._normal
-    
+
     @property
     def grasp_direction(self):
         return self._grasp_direction
@@ -49,11 +52,11 @@ class Contact(object):
         if np.dot(self._normal, direction) > 0:
             direction = -1 * direction
 
-        x = np.array([1,0,0])
+        x = np.array([1, 0, 0])
         # 计算x轴在切平面上的投影,作为第一个切向量
         v = x - direction*(x.dot(direction)/direction.dot(direction))
         w = np.cross(direction, v)
-        
+
         v = v / np.linalg.norm(v)
         w = w / np.linalg.norm(w)
 
@@ -66,7 +69,7 @@ class Contact(object):
         ----------
         num_cone_faces : int,摩擦锥近似的面数
         friction_coef : float,摩擦系数
-        
+
         Returns
         -------
         success : bool,摩擦锥计算是否成功
@@ -84,18 +87,19 @@ class Contact(object):
         normal_force_mag = np.dot(grasp_direction, in_normal)   # 法线方向分力
         tan_force_x = np.dot(grasp_direction, t1)               # t1方向分力
         tan_force_y = np.dot(grasp_direction, t2)               # t2方向分力
-        tan_force_mag = np.sqrt(tan_force_x**2 + tan_force_y**2)# 切平面上的分力
+        tan_force_mag = np.sqrt(tan_force_x**2 + tan_force_y**2)  # 切平面上的分力
         friction_force_mag = friction_coef * normal_force_mag   # 最大静摩擦
 
         # 如果切面方向力大于最大静摩擦, 则生成失败
-        if friction_force_mag < tan_force_mag:                  
+        if friction_force_mag < tan_force_mag:
             return False, self._friction_cone, self._normal
 
         # 计算摩擦锥
         force = in_normal
         cone_support = np.zeros((3, num_cone_faces))
         for j in range(num_cone_faces):
-            tan_vec = t1 * np.cos(2 * np.pi * (float(j) / num_cone_faces)) + t2 * np.sin(2 * np.pi * (float(j) / num_cone_faces))
+            tan_vec = t1 * np.cos(2 * np.pi * (float(j) / num_cone_faces)) + \
+                t2 * np.sin(2 * np.pi * (float(j) / num_cone_faces))
             cone_support[:, j] = force + friction_coef * tan_vec
 
         self._friction_cone = cone_support
@@ -110,6 +114,5 @@ class Contact(object):
         torques = np.zeros([3, num_forces])
         moment_arm = self._moment_arm
         for i in range(num_forces):
-            torques[:,i] = np.cross(moment_arm, forces[:,i])
+            torques[:, i] = np.cross(moment_arm, forces[:, i])
         return torques
-    

@@ -33,36 +33,49 @@ class Grasp_2f(object):
 
     @property
     def endpoints(self):
+        """ 返回夹爪的两个端点 """
         point0 = self._center - (self._max_grasp_width / 2.0) * self._axis
         point1 = self._center + (self._max_grasp_width / 2.0) * self._axis
         return point0, point1
 
-    def _find_contacts(self, mesh, point0, point1):
-        points, cell_ids = mesh.intersect_line(point0, point1)
-        if (len(points) % 2) > 0:
-            return False, None, None
-        # 指向point1的向量
-        direction = point1 - point0
+    def _find_contact(self, mesh, out_point, center_point):
+        """ 找到一个接触点, 从外部点到中心点的第一个接触点
+            mesh: 一个BaseMesh对象
+            out_point: 夹爪的一个端点
+            center_point: 夹爪的中心点
+        """
+        points, cell_ids = mesh.intersect_line(out_point, center_point)
+        direction = center_point - out_point
 
-        c0_normal = mesh.tri_mesh.face_normals[cell_ids[0]]
-        c0_moment_arm = points[0] - mesh.center_mass
-        if np.dot(direction, c0_normal) > 0:
-            c0_normal = -c0_normal
-        c0 = Contact(points[0], c0_normal, direction, c0_moment_arm)
+        if points.shape[0] < 1:
+            return False, None
 
-        c1_normal = mesh.tri_mesh.face_normals[cell_ids[-1]]
-        c1_moment_arm = points[-1] - mesh.center_mass
-        if np.dot(-direction, c1_normal) > 0:
-            c1_normal = -c1_normal
-        c1 = Contact(points[-1], c1_normal, -direction, c1_moment_arm)
-        return True, c0, c1
+        # 求取法向量, 这里的法向量要保证朝向外侧
+        normal = mesh.tri_mesh.face_normals[cell_ids[0]]
+        if np.dot(direction, normal) > 0:
+            normal = -normal
+        # 求取接触点的力臂,由质心指向接触点的向量
+        moment_arm = points[0] - mesh.center_mass
+        c = Contact(points[0], normal, direction, moment_arm)
+        return True, c
 
     def close_fingers(self, mesh, check_approach=True, approach_dist=0.2):
         # TODO 检查在接近路径上的碰撞点,暂时先不写
         if check_approach:
             pass
+        
+        point0, point1 = self.endpoints
+        # 先判断中间的交点是否为偶数并且是否有足够的点,奇数交点个数则表示出错
+        points, _ = mesh.intersect_line(point0, point1)
+        if ((points.shape[0]%2) != 0) or points.shape[0] < 2:
+            return False, None, None
+            
+        is_c0, c0 = self._find_contact(mesh, point0, self._center)
+        is_c1, c1 = self._find_contact(mesh, point1, self._center)
+        if not (is_c0 and is_c1):
+            return False, None, None
 
-        return self._find_contacts(mesh, *self.endpoints)
+        return True, c0, c1
 
     @staticmethod
     def grasp_from_one_contact():
