@@ -1,237 +1,557 @@
-2019-03-10 15:10:29,777 - DEBUG - loaded mesh using load_wavefront
-2019-03-10 15:10:29,779 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-10 15:10:29,781 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-10 15:10:29,781 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-10 15:10:29,781 - DEBUG - area_faces was not in cache, executed in 0.000000
-2019-03-10 15:10:29,782 - DEBUG - load_mesh executed in 0.0180 seconds.
-2019-03-10 15:10:29,924 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-10 15:10:29,925 - DEBUG - edges was not in cache, executed in 0.000000
-2019-03-10 15:10:29,925 - DEBUG - edges_sorted was not in cache, executed in 0.000000
-2019-03-10 15:10:29,926 - DEBUG - is_watertight was not in cache, executed in 0.002012
-2019-03-10 15:10:29,926 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-10 15:10:29,926 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-10 15:10:29,927 - DEBUG - mass_properties was not in cache, executed in 0.000999
-2019-03-10 15:10:29,928 - DEBUG - area_faces was not in cache, executed in 0.000000
-2019-03-10 15:10:29,929 - DEBUG - generating face normals
-2019-03-10 15:10:29,945 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:29,945 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:29,950 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:29,950 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:29,952 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:29,954 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:29,954 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:29,958 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:29,958 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:29,962 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:29,963 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:29,966 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:29,967 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:29,970 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:29,970 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:29,973 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:29,974 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:29,974 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:29,976 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:29,977 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:29,977 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:29,981 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:29,981 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:29,984 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:29,985 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:29,988 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:29,989 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:29,993 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:29,993 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:29,997 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:29,997 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,001 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,001 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,003 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,004 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,004 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,006 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,008 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-10 15:10:30,008 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-10 15:10:30,010 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,010 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,012 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,013 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,014 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,017 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,017 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,020 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,020 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,022 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,023 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,024 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,026 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,027 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,027 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,029 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,030 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,030 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,033 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,033 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,037 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,037 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,039 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,040 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,040 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,044 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,044 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,047 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,047 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,050 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,050 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,053 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,053 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,056 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,057 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,059 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,060 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,062 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,063 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,063 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,065 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,066 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,066 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,070 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-10 15:10:30,071 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,071 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,074 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,074 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,076 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,077 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,077 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,080 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,080 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,083 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,083 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,086 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,087 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,089 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,090 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,090 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,092 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,093 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,093 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,096 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,096 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,099 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,099 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,102 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,102 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,105 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,106 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,108 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,108 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,112 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-10 15:10:30,113 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,113 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,116 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,116 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,119 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,119 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,122 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,122 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,125 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,125 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,128 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,128 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,130 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,131 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,132 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,133 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,135 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,135 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,138 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,138 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,140 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,141 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,141 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,143 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,144 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,144 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,148 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,148 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,151 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,151 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,153 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,154 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,154 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,157 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,157 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,158 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,159 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-10 15:10:30,160 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,161 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,164 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-10 15:10:30,165 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-10 15:10:30,166 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-10 15:10:30,167 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,167 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,169 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,170 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,170 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,172 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,173 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,173 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,175 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,177 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,177 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,180 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,180 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,183 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,183 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,186 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,187 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,189 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,190 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,190 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,192 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,193 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,193 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,195 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,197 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-10 15:10:30,198 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-10 15:10:30,199 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,199 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,201 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,202 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,202 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,205 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,206 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,206 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,209 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-10 15:10:30,211 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,211 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,213 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,214 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,214 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,216 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,218 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,218 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,220 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,221 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,224 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,224 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,226 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,227 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,227 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,230 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,231 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,231 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,233 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,234 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,234 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,237 - INFO - sample_grasps 成功生成一个抓取
-2019-03-10 15:10:30,238 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-10 15:10:30,239 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-10 15:10:30,240 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,240 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,243 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-10 15:10:30,244 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,244 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,247 - DEBUG - _find_grasp 找到一个合适的抓取，物体:bar_clamp 
-2019-03-10 15:10:30,247 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-10 15:10:30,249 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,262 - DEBUG - loaded mesh using load_wavefront
+2019-03-10 18:23:51,264 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-03-10 18:23:51,272 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:51,272 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:51,273 - DEBUG - area_faces was not in cache, executed in 0.000998
+2019-03-10 18:23:51,273 - DEBUG - load_mesh executed in 0.1259 seconds.
+2019-03-10 18:23:51,452 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-03-10 18:23:51,453 - DEBUG - edges was not in cache, executed in 0.000000
+2019-03-10 18:23:51,453 - DEBUG - edges_sorted was not in cache, executed in 0.000000
+2019-03-10 18:23:51,454 - DEBUG - is_watertight was not in cache, executed in 0.001999
+2019-03-10 18:23:51,455 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:51,455 - DEBUG - triangles_center was not in cache, executed in 0.001000
+2019-03-10 18:23:51,455 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:51,456 - DEBUG - area_faces was not in cache, executed in 0.000999
+2019-03-10 18:23:51,456 - DEBUG - centroid was not in cache, executed in 0.002000
+2019-03-10 18:23:51,457 - DEBUG - generating face normals
+2019-03-10 18:23:51,468 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,470 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,471 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,474 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,476 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,478 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,480 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,481 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,484 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,487 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,489 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,491 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,493 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,495 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,496 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,498 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,500 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,503 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,506 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,508 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,510 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,512 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,513 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,516 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,518 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,519 - DEBUG - _find_grasp 交点数检查出错，物体:test 
+2019-03-10 18:23:51,521 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,523 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,527 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,529 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,530 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,532 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,533 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,536 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,538 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,541 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,544 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,547 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,550 - DEBUG - _find_grasp 抓取生成失败，物体:test 
+2019-03-10 18:23:51,551 - DEBUG - _find_grasp 抓取生成失败，物体:test 
+2019-03-10 18:23:51,552 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,555 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,559 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,562 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,564 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,565 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,567 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,568 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,570 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,572 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,575 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,578 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,580 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,581 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,583 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,584 - DEBUG - _find_grasp 给定点未在物体表面，物体:test 
+2019-03-10 18:23:51,585 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,587 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,589 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,591 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,592 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,595 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,598 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,599 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,602 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,604 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,605 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,607 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,608 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,611 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,614 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,616 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,618 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,620 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,621 - DEBUG - _find_grasp 成功生成2个抓取，物体:test 
+2019-03-10 18:23:51,623 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,625 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,627 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,629 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,630 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,634 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,636 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,637 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,639 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,641 - DEBUG - _find_grasp 抓取生成失败，物体:test 
+2019-03-10 18:23:51,642 - DEBUG - _find_grasp 抓取生成失败，物体:test 
+2019-03-10 18:23:51,643 - DEBUG - _find_grasp 抓取生成失败，物体:test 
+2019-03-10 18:23:51,644 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,647 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,648 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,651 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,654 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,656 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,657 - DEBUG - _find_grasp 交点数检查出错，物体:test 
+2019-03-10 18:23:51,658 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,660 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,663 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,666 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,670 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,672 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,673 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,675 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,676 - DEBUG - _find_grasp 交点数检查出错，物体:test 
+2019-03-10 18:23:51,677 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,679 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,680 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,683 - DEBUG - _find_grasp 给定点未在物体表面，物体:test 
+2019-03-10 18:23:51,685 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,687 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,688 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,691 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,692 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,694 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,695 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,697 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,698 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,702 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,705 - DEBUG - _find_grasp 交点数检查出错，物体:test 
+2019-03-10 18:23:51,707 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,709 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,710 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,713 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,714 - DEBUG - _find_grasp 给定点未在物体表面，物体:test 
+2019-03-10 18:23:51,715 - DEBUG - _find_grasp 给定点未在物体表面，物体:test 
+2019-03-10 18:23:51,716 - DEBUG - _find_grasp 给定点未在物体表面，物体:test 
+2019-03-10 18:23:51,717 - DEBUG - _find_grasp 给定点未在物体表面，物体:test 
+2019-03-10 18:23:51,718 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,721 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,725 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,727 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,728 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,730 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,731 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,733 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,735 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,737 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,738 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,741 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,743 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,745 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,748 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,751 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,754 - DEBUG - _find_grasp 抓取生成失败，物体:test 
+2019-03-10 18:23:51,755 - DEBUG - _find_grasp 抓取生成失败，物体:test 
+2019-03-10 18:23:51,757 - DEBUG - _find_grasp 抓取生成失败，物体:test 
+2019-03-10 18:23:51,758 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,761 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,763 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,764 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,766 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,767 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,769 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,771 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,773 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,774 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,777 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,779 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,780 - DEBUG - _find_grasp 交点数检查出错，物体:test 
+2019-03-10 18:23:51,781 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,785 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,788 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,790 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,794 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,796 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,797 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,800 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,802 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,804 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,806 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,807 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,810 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,814 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,816 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,817 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,819 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,820 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,824 - DEBUG - _find_grasp 成功生成2个抓取，物体:test 
+2019-03-10 18:23:51,826 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,829 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,831 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,832 - DEBUG - _find_grasp 成功生成2个抓取，物体:test 
+2019-03-10 18:23:51,834 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,837 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,838 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,840 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,841 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,844 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,848 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,850 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,851 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,853 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,854 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,857 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,858 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,862 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,865 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,868 - DEBUG - _find_grasp 抓取生成失败，物体:test 
+2019-03-10 18:23:51,869 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,872 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,876 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,878 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,880 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,883 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,886 - DEBUG - _find_grasp 抓取生成失败，物体:test 
+2019-03-10 18:23:51,887 - DEBUG - _find_grasp 抓取生成失败，物体:test 
+2019-03-10 18:23:51,888 - DEBUG - _find_grasp 抓取生成失败，物体:test 
+2019-03-10 18:23:51,890 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,893 - DEBUG - _find_grasp 抓取生成失败，物体:test 
+2019-03-10 18:23:51,894 - DEBUG - _find_grasp 抓取生成失败，物体:test 
+2019-03-10 18:23:51,896 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,898 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,901 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,902 - DEBUG - _find_grasp 成功生成1个抓取，物体:test 
+2019-03-10 18:23:51,904 - INFO - sample_grasps 成功生成一个抓取
+2019-03-10 18:23:51,906 - DEBUG - _find_grasp 抓取生成失败，物体:test 
+2019-03-10 18:23:51,907 - DEBUG - _find_grasp 抓取生成失败，物体:test 
+2019-03-10 18:23:51,908 - DEBUG - _find_grasp 抓取生成失败，物体:test 
+2019-03-10 18:23:51,960 - DEBUG - faces_sparse was not in cache, executed in 0.001000
+2019-03-10 18:23:51,961 - DEBUG - vertex_normals was not in cache, executed in 0.002001
+2019-03-10 18:23:51,967 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:51,968 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:51,968 - DEBUG - generating face normals
+2019-03-10 18:23:51,969 - DEBUG - triangles was not in cache, executed in 0.000999
+2019-03-10 18:23:51,969 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:51,970 - DEBUG - vertex_normals was not in cache, executed in 0.002984
+2019-03-10 18:23:51,974 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:51,975 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:51,975 - DEBUG - generating face normals
+2019-03-10 18:23:51,976 - DEBUG - triangles was not in cache, executed in 0.001000
+2019-03-10 18:23:51,976 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:51,977 - DEBUG - vertex_normals was not in cache, executed in 0.002012
+2019-03-10 18:23:51,981 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:51,982 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:51,982 - DEBUG - generating face normals
+2019-03-10 18:23:51,983 - DEBUG - triangles was not in cache, executed in 0.000999
+2019-03-10 18:23:51,984 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:51,985 - DEBUG - vertex_normals was not in cache, executed in 0.002000
+2019-03-10 18:23:51,989 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:51,989 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:51,990 - DEBUG - generating face normals
+2019-03-10 18:23:51,990 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:51,991 - DEBUG - triangles_cross was not in cache, executed in 0.001000
+2019-03-10 18:23:51,992 - DEBUG - vertex_normals was not in cache, executed in 0.002996
+2019-03-10 18:23:51,997 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:51,998 - DEBUG - faces_sparse was not in cache, executed in 0.000999
+2019-03-10 18:23:51,998 - DEBUG - generating face normals
+2019-03-10 18:23:51,998 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:51,999 - DEBUG - triangles_cross was not in cache, executed in 0.000985
+2019-03-10 18:23:52,000 - DEBUG - vertex_normals was not in cache, executed in 0.002984
+2019-03-10 18:23:52,004 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,004 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,005 - DEBUG - generating face normals
+2019-03-10 18:23:52,005 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,005 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,006 - DEBUG - vertex_normals was not in cache, executed in 0.001999
+2019-03-10 18:23:52,011 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,011 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,012 - DEBUG - generating face normals
+2019-03-10 18:23:52,012 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,013 - DEBUG - triangles_cross was not in cache, executed in 0.000990
+2019-03-10 18:23:52,014 - DEBUG - vertex_normals was not in cache, executed in 0.002987
+2019-03-10 18:23:52,017 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,018 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,019 - DEBUG - generating face normals
+2019-03-10 18:23:52,019 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,020 - DEBUG - triangles_cross was not in cache, executed in 0.000999
+2019-03-10 18:23:52,021 - DEBUG - vertex_normals was not in cache, executed in 0.001999
+2019-03-10 18:23:52,025 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,026 - DEBUG - faces_sparse was not in cache, executed in 0.000999
+2019-03-10 18:23:52,026 - DEBUG - generating face normals
+2019-03-10 18:23:52,026 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,027 - DEBUG - triangles_cross was not in cache, executed in 0.000999
+2019-03-10 18:23:52,028 - DEBUG - vertex_normals was not in cache, executed in 0.002998
+2019-03-10 18:23:52,031 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,032 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,033 - DEBUG - generating face normals
+2019-03-10 18:23:52,033 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,034 - DEBUG - triangles_cross was not in cache, executed in 0.001001
+2019-03-10 18:23:52,035 - DEBUG - vertex_normals was not in cache, executed in 0.002998
+2019-03-10 18:23:52,039 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,040 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,040 - DEBUG - generating face normals
+2019-03-10 18:23:52,041 - DEBUG - triangles was not in cache, executed in 0.000999
+2019-03-10 18:23:52,041 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,042 - DEBUG - vertex_normals was not in cache, executed in 0.001986
+2019-03-10 18:23:52,047 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,048 - DEBUG - faces_sparse was not in cache, executed in 0.000999
+2019-03-10 18:23:52,048 - DEBUG - generating face normals
+2019-03-10 18:23:52,048 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,049 - DEBUG - triangles_cross was not in cache, executed in 0.001013
+2019-03-10 18:23:52,050 - DEBUG - vertex_normals was not in cache, executed in 0.003012
+2019-03-10 18:23:52,054 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,055 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,055 - DEBUG - generating face normals
+2019-03-10 18:23:52,056 - DEBUG - triangles was not in cache, executed in 0.001000
+2019-03-10 18:23:52,056 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,057 - DEBUG - vertex_normals was not in cache, executed in 0.001999
+2019-03-10 18:23:52,061 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,061 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,062 - DEBUG - generating face normals
+2019-03-10 18:23:52,062 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,063 - DEBUG - triangles_cross was not in cache, executed in 0.000998
+2019-03-10 18:23:52,063 - DEBUG - vertex_normals was not in cache, executed in 0.001986
+2019-03-10 18:23:52,067 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,068 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,068 - DEBUG - generating face normals
+2019-03-10 18:23:52,069 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,069 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,071 - DEBUG - vertex_normals was not in cache, executed in 0.002994
+2019-03-10 18:23:52,074 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,075 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,076 - DEBUG - generating face normals
+2019-03-10 18:23:52,076 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,076 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,077 - DEBUG - vertex_normals was not in cache, executed in 0.001999
+2019-03-10 18:23:52,082 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,082 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,083 - DEBUG - generating face normals
+2019-03-10 18:23:52,083 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,084 - DEBUG - triangles_cross was not in cache, executed in 0.000999
+2019-03-10 18:23:52,085 - DEBUG - vertex_normals was not in cache, executed in 0.003012
+2019-03-10 18:23:52,088 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,089 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,089 - DEBUG - generating face normals
+2019-03-10 18:23:52,090 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,090 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,091 - DEBUG - vertex_normals was not in cache, executed in 0.001999
+2019-03-10 18:23:52,097 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,098 - DEBUG - faces_sparse was not in cache, executed in 0.001016
+2019-03-10 18:23:52,098 - DEBUG - generating face normals
+2019-03-10 18:23:52,098 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,099 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,100 - DEBUG - vertex_normals was not in cache, executed in 0.003011
+2019-03-10 18:23:52,104 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,105 - DEBUG - faces_sparse was not in cache, executed in 0.000999
+2019-03-10 18:23:52,105 - DEBUG - generating face normals
+2019-03-10 18:23:52,105 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,106 - DEBUG - triangles_cross was not in cache, executed in 0.000999
+2019-03-10 18:23:52,107 - DEBUG - vertex_normals was not in cache, executed in 0.002985
+2019-03-10 18:23:52,111 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,112 - DEBUG - faces_sparse was not in cache, executed in 0.001000
+2019-03-10 18:23:52,112 - DEBUG - generating face normals
+2019-03-10 18:23:52,112 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,113 - DEBUG - triangles_cross was not in cache, executed in 0.000999
+2019-03-10 18:23:52,114 - DEBUG - vertex_normals was not in cache, executed in 0.002999
+2019-03-10 18:23:52,118 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,119 - DEBUG - faces_sparse was not in cache, executed in 0.000999
+2019-03-10 18:23:52,119 - DEBUG - generating face normals
+2019-03-10 18:23:52,119 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,120 - DEBUG - triangles_cross was not in cache, executed in 0.001000
+2019-03-10 18:23:52,121 - DEBUG - vertex_normals was not in cache, executed in 0.002999
+2019-03-10 18:23:52,125 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,126 - DEBUG - faces_sparse was not in cache, executed in 0.000999
+2019-03-10 18:23:52,126 - DEBUG - generating face normals
+2019-03-10 18:23:52,126 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,127 - DEBUG - triangles_cross was not in cache, executed in 0.001013
+2019-03-10 18:23:52,128 - DEBUG - vertex_normals was not in cache, executed in 0.003011
+2019-03-10 18:23:52,131 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,132 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,132 - DEBUG - generating face normals
+2019-03-10 18:23:52,133 - DEBUG - triangles was not in cache, executed in 0.001000
+2019-03-10 18:23:52,133 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,134 - DEBUG - vertex_normals was not in cache, executed in 0.001999
+2019-03-10 18:23:52,139 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,140 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,140 - DEBUG - generating face normals
+2019-03-10 18:23:52,141 - DEBUG - triangles was not in cache, executed in 0.000999
+2019-03-10 18:23:52,141 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,142 - DEBUG - vertex_normals was not in cache, executed in 0.001999
+2019-03-10 18:23:52,146 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,147 - DEBUG - faces_sparse was not in cache, executed in 0.000999
+2019-03-10 18:23:52,147 - DEBUG - generating face normals
+2019-03-10 18:23:52,147 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,150 - DEBUG - triangles_cross was not in cache, executed in 0.000999
+2019-03-10 18:23:52,151 - DEBUG - vertex_normals was not in cache, executed in 0.004998
+2019-03-10 18:23:52,156 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,156 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,157 - DEBUG - generating face normals
+2019-03-10 18:23:52,157 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,158 - DEBUG - triangles_cross was not in cache, executed in 0.000999
+2019-03-10 18:23:52,159 - DEBUG - vertex_normals was not in cache, executed in 0.002998
+2019-03-10 18:23:52,163 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,164 - DEBUG - faces_sparse was not in cache, executed in 0.001000
+2019-03-10 18:23:52,164 - DEBUG - generating face normals
+2019-03-10 18:23:52,164 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,165 - DEBUG - triangles_cross was not in cache, executed in 0.001000
+2019-03-10 18:23:52,166 - DEBUG - vertex_normals was not in cache, executed in 0.002999
+2019-03-10 18:23:52,170 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,171 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,171 - DEBUG - generating face normals
+2019-03-10 18:23:52,172 - DEBUG - triangles was not in cache, executed in 0.000999
+2019-03-10 18:23:52,172 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,173 - DEBUG - vertex_normals was not in cache, executed in 0.001997
+2019-03-10 18:23:52,177 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,178 - DEBUG - faces_sparse was not in cache, executed in 0.000999
+2019-03-10 18:23:52,178 - DEBUG - generating face normals
+2019-03-10 18:23:52,178 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,179 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,180 - DEBUG - vertex_normals was not in cache, executed in 0.002997
+2019-03-10 18:23:52,184 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,185 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,185 - DEBUG - generating face normals
+2019-03-10 18:23:52,185 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,186 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,187 - DEBUG - vertex_normals was not in cache, executed in 0.002001
+2019-03-10 18:23:52,191 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,192 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,193 - DEBUG - generating face normals
+2019-03-10 18:23:52,193 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,194 - DEBUG - triangles_cross was not in cache, executed in 0.000999
+2019-03-10 18:23:52,194 - DEBUG - vertex_normals was not in cache, executed in 0.002012
+2019-03-10 18:23:52,199 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,200 - DEBUG - faces_sparse was not in cache, executed in 0.001000
+2019-03-10 18:23:52,200 - DEBUG - generating face normals
+2019-03-10 18:23:52,200 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,202 - DEBUG - triangles_cross was not in cache, executed in 0.001000
+2019-03-10 18:23:52,203 - DEBUG - vertex_normals was not in cache, executed in 0.004012
+2019-03-10 18:23:52,207 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,208 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,208 - DEBUG - generating face normals
+2019-03-10 18:23:52,209 - DEBUG - triangles was not in cache, executed in 0.001000
+2019-03-10 18:23:52,209 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,210 - DEBUG - vertex_normals was not in cache, executed in 0.002013
+2019-03-10 18:23:52,214 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,215 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,216 - DEBUG - generating face normals
+2019-03-10 18:23:52,216 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,217 - DEBUG - triangles_cross was not in cache, executed in 0.001016
+2019-03-10 18:23:52,218 - DEBUG - vertex_normals was not in cache, executed in 0.003009
+2019-03-10 18:23:52,222 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,223 - DEBUG - faces_sparse was not in cache, executed in 0.000999
+2019-03-10 18:23:52,223 - DEBUG - generating face normals
+2019-03-10 18:23:52,223 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,224 - DEBUG - triangles_cross was not in cache, executed in 0.001000
+2019-03-10 18:23:52,225 - DEBUG - vertex_normals was not in cache, executed in 0.003010
+2019-03-10 18:23:52,229 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,230 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,230 - DEBUG - generating face normals
+2019-03-10 18:23:52,231 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,232 - DEBUG - triangles_cross was not in cache, executed in 0.000999
+2019-03-10 18:23:52,232 - DEBUG - vertex_normals was not in cache, executed in 0.002002
+2019-03-10 18:23:52,236 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,237 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,237 - DEBUG - generating face normals
+2019-03-10 18:23:52,238 - DEBUG - triangles was not in cache, executed in 0.000999
+2019-03-10 18:23:52,238 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,239 - DEBUG - vertex_normals was not in cache, executed in 0.001999
+2019-03-10 18:23:52,244 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,245 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,245 - DEBUG - generating face normals
+2019-03-10 18:23:52,245 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,246 - DEBUG - triangles_cross was not in cache, executed in 0.000998
+2019-03-10 18:23:52,247 - DEBUG - vertex_normals was not in cache, executed in 0.002980
+2019-03-10 18:23:52,251 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,252 - DEBUG - faces_sparse was not in cache, executed in 0.000999
+2019-03-10 18:23:52,252 - DEBUG - generating face normals
+2019-03-10 18:23:52,253 - DEBUG - triangles was not in cache, executed in 0.001000
+2019-03-10 18:23:52,253 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,254 - DEBUG - vertex_normals was not in cache, executed in 0.003012
+2019-03-10 18:23:52,260 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,261 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,261 - DEBUG - generating face normals
+2019-03-10 18:23:52,262 - DEBUG - triangles was not in cache, executed in 0.000987
+2019-03-10 18:23:52,262 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,263 - DEBUG - vertex_normals was not in cache, executed in 0.001985
+2019-03-10 18:23:52,268 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,269 - DEBUG - faces_sparse was not in cache, executed in 0.000999
+2019-03-10 18:23:52,269 - DEBUG - generating face normals
+2019-03-10 18:23:52,269 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,270 - DEBUG - triangles_cross was not in cache, executed in 0.000998
+2019-03-10 18:23:52,271 - DEBUG - vertex_normals was not in cache, executed in 0.002987
+2019-03-10 18:23:52,275 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,276 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,276 - DEBUG - generating face normals
+2019-03-10 18:23:52,277 - DEBUG - triangles was not in cache, executed in 0.000998
+2019-03-10 18:23:52,277 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,278 - DEBUG - vertex_normals was not in cache, executed in 0.001999
+2019-03-10 18:23:52,285 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,286 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,287 - DEBUG - generating face normals
+2019-03-10 18:23:52,287 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,288 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,288 - DEBUG - vertex_normals was not in cache, executed in 0.001998
+2019-03-10 18:23:52,293 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,294 - DEBUG - faces_sparse was not in cache, executed in 0.001014
+2019-03-10 18:23:52,294 - DEBUG - generating face normals
+2019-03-10 18:23:52,294 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,295 - DEBUG - triangles_cross was not in cache, executed in 0.000999
+2019-03-10 18:23:52,296 - DEBUG - vertex_normals was not in cache, executed in 0.002999
+2019-03-10 18:23:52,300 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,301 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,301 - DEBUG - generating face normals
+2019-03-10 18:23:52,302 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,302 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,304 - DEBUG - vertex_normals was not in cache, executed in 0.001999
+2019-03-10 18:23:52,308 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,309 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,309 - DEBUG - generating face normals
+2019-03-10 18:23:52,310 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,311 - DEBUG - triangles_cross was not in cache, executed in 0.001014
+2019-03-10 18:23:52,312 - DEBUG - vertex_normals was not in cache, executed in 0.003001
+2019-03-10 18:23:52,317 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,318 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,318 - DEBUG - generating face normals
+2019-03-10 18:23:52,319 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,319 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,321 - DEBUG - vertex_normals was not in cache, executed in 0.002998
+2019-03-10 18:23:52,325 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,326 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,326 - DEBUG - generating face normals
+2019-03-10 18:23:52,327 - DEBUG - triangles was not in cache, executed in 0.000999
+2019-03-10 18:23:52,327 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,328 - DEBUG - vertex_normals was not in cache, executed in 0.001998
+2019-03-10 18:23:52,332 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,333 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-03-10 18:23:52,333 - DEBUG - generating face normals
+2019-03-10 18:23:52,334 - DEBUG - triangles was not in cache, executed in 0.000999
+2019-03-10 18:23:52,334 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,335 - DEBUG - vertex_normals was not in cache, executed in 0.002998
+2019-03-10 18:23:52,340 - DEBUG - apply_tranform passed identity matrix
+2019-03-10 18:23:52,341 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-03-10 18:23:52,343 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,343 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,343 - DEBUG - mass_properties was not in cache, executed in 0.000999
+2019-03-10 18:23:52,344 - DEBUG - 3 items cleared from cache: ['triangles', 'triangles_cross', 'mass_properties']
+2019-03-10 18:23:52,345 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,347 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-03-10 18:23:52,348 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,348 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,349 - DEBUG - mass_properties was not in cache, executed in 0.000999
+2019-03-10 18:23:52,349 - DEBUG - 3 items cleared from cache: ['triangles', 'triangles_cross', 'mass_properties']
+2019-03-10 18:23:52,350 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,352 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-03-10 18:23:52,353 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,353 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-10 18:23:52,354 - DEBUG - mass_properties was not in cache, executed in 0.000000
+2019-03-10 18:23:52,354 - DEBUG - 3 items cleared from cache: ['triangles', 'triangles_cross', 'mass_properties']
+2019-03-10 18:23:52,355 - DEBUG - mesh transformed by matrix
+2019-03-10 18:23:52,357 - DEBUG - generating face normals
+2019-03-10 18:23:52,357 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-10 18:23:52,358 - DEBUG - triangles_cross was not in cache, executed in 0.000999

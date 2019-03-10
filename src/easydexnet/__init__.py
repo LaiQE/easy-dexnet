@@ -6,3 +6,4 @@ from .mesh import BaseMesh
 from .contact import Contact
 from .grasp import Grasp_2f
 from .stable_poses import StablePoses
+from .vision import DexScene

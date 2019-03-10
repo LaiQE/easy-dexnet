@@ -6,7 +6,8 @@ Author: Lai QE
 from setuptools import setup,find_packages
 
 requirements = [
-      'trimesh',   
+      'trimesh', 
+      'pyrender', 
 ]
 
 setup(name='easy-dexnet',                       

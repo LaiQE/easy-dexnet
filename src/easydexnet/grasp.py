@@ -41,6 +41,10 @@ class Grasp_2f(object):
         point0 = self._center - half_axis
         point1 = self._center + half_axis
         return point0, point1
+    
+    @property
+    def width(self):
+        return self._max_grasp_width
 
     @staticmethod
     def distance(g1, g2, alpha=0.05):

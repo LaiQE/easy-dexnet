@@ -120,7 +120,7 @@ class GraspSampler_2f(object):
             if distance_is and left_is and right_is:
                 grasp = Grasp_2f(center, p-given_point,
                                  self._max_grasp_width, config=self._config)
-                logging.debug('_find_grasp 找到一个合适的抓取，物体:%s ' % (mesh.name))
+                # logging.debug('_find_grasp 找到一个合适的抓取，物体:%s ' % (mesh.name))
                 grasps.append(grasp)
         if len(grasps) > 0:
             logging.debug('_find_grasp 成功生成%d个抓取，物体:%s ' %
@@ -172,7 +172,7 @@ class GraspSampler_2f(object):
         random.shuffle(grasps)
         return grasps
 
-    def generate_grasps(self, mesh, target_num_grasps, grasp_gen_mult=5, max_iter=3):
+    def generate_grasps(self, mesh, target_num_grasps, grasp_gen_mult=2, max_iter=3):
         """ 生成候选抓取点
         mesh : 待抓取的物体
         target_num_grasps : 目标生成抓取点数目
@@ -200,7 +200,7 @@ class GraspSampler_2f(object):
                 if min_dist >= self._grasp_dist_thresh:
                     grasps.append(grasp)
 
-            grasp_gen_mult = int(grasp_gen_mult * 1.5)
+            grasp_gen_mult = int(grasp_gen_mult * 2)
             num_grasps_remaining = target_num_grasps - len(grasps)
             k += 1
         if len(grasps) < target_num_grasps:
