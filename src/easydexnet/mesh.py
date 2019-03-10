@@ -9,14 +9,16 @@ class BaseMesh(object):
     ''' 基础的网格文件类，用以保存原始数据
     '''
 
-    def __init__(self, trimesh_obj):
+    def __init__(self, trimesh_obj, name=None):
         '''
         trimesh_obj: 一个trimesh对象
+        name: 文件的名字
         '''
         # 一个trimesh对象,用来保存网格数据
         self._trimesh_obj = self._process_mesh(trimesh_obj)
         # 一个tvtk中的obb对象,用来计算相交线
         self._obb_tree = self._generate_obbtree(self._trimesh_obj)
+        self._name = name
         if self._trimesh_obj.is_watertight:
             self._center_mass = self._trimesh_obj.center_mass
         else:
@@ -29,6 +31,10 @@ class BaseMesh(object):
     @property
     def center_mass(self):
         return self._center_mass
+
+    @property
+    def name(self):
+        return self._name
 
     def intersect_line(self, lineP0, lineP1):
         ''' 计算与线段相交的交点，这里调用了tvtk的方法
@@ -51,7 +57,7 @@ class BaseMesh(object):
     def _generate_obbtree(self, trimesh_obj):
         ''' 用来生成一个可用的obbtree对象，加速后面相交的判断 '''
         poly = tvtk.PolyData(points=trimesh_obj.vertices,
-                             polys=trimesh_obj.face)
+                             polys=trimesh_obj.faces)
         tree = tvtk.OBBTree(data_set=poly, tolerance=1.e-8)
         tree.build_locator()
         return tree

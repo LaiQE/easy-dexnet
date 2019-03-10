@@ -1,0 +1,22 @@
+# 夹爪参数,最大开度和最小开度
+grispper:
+  max_width: 0.05
+  min_width: 0.0
+
+# 计算夹爪距离时的默认alpha值
+grisp_distance_alpha: 0.05
+
+# 默认的摩擦系数
+default_friction_coef: 0.5
+
+# 计算摩擦锥时的默认多面体近似面数
+num_cone_faces: 8
+
+# 稳定姿态阈值
+stable_pose_min_p: 0.0
+
+# 接触点之间容许的最小宽度
+min_contact_dist: 0.0025
+
+# 不同抓取点之间的容许的最小距离
+grasp_dist_thresh: 0.0005

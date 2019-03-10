@@ -7,7 +7,7 @@ class Contact(object):
         主要用来计算接触点的摩擦锥
     """
 
-    def __init__(self, point, normal, grasp_direction, moment_arm=None):
+    def __init__(self, point, normal, grasp_direction, moment_arm=None, config=None):
         """
         point: 接触点在物体坐标系的坐标点
         normal: 接触点所在面片的法线, 方向向外
@@ -19,7 +19,12 @@ class Contact(object):
         self._grasp_direction = grasp_direction / \
             np.linalg.norm(grasp_direction)
         self._moment_arm = moment_arm
-        self._friction_cone = None
+        self._friction_cone = 0.5
+        if config is not None:
+            self._friction_cone = config['default_friction_coef']
+        self._num_cone_faces = 8
+        if config is not None:
+            self._num_cone_faces = config['num_cone_faces']
 
     @property
     def point(self):
@@ -62,7 +67,7 @@ class Contact(object):
 
         return direction, v, w
 
-    def friction_cone(self, num_cone_faces=8, friction_coef=0.5):
+    def friction_cone(self, num_cone_faces=None, friction_coef=None):
         """ 计算接触点处的摩擦锥.
 
         Parameters
@@ -76,6 +81,11 @@ class Contact(object):
         cone_support : 摩擦锥的边界向量
         normal : 向外的法向量
         """
+        if num_cone_faces is None:
+            num_cone_faces = self._num_cone_faces
+        if friction_coef is None:
+            friction_coef = self._friction_cone
+            
         if self._friction_cone is not None and self._normal is not None:
             return True, self._friction_cone, self._normal
 
