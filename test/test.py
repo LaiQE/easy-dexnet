@@ -6,7 +6,10 @@ import pyrender
 from ruamel.yaml import YAML
 ROOT_PATH = r'H:\Robot\easy-dexnet'
 sys.path.append(os.path.abspath(os.path.join(ROOT_PATH, 'src')))
-import easydexnet as dex
+try:
+    import easydexnet as dex
+except e:
+    pass
 
 
 TEST_OBJ_FILE = os.path.join(ROOT_PATH, r'data/test.obj')
