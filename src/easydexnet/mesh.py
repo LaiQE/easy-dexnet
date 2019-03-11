@@ -2,6 +2,7 @@
 # -*- coding:utf-8 -*-
 
 import trimesh
+import numpy as np
 from tvtk.api import tvtk
 
 
@@ -69,3 +70,8 @@ class BaseMesh(object):
             trimesh_obj._validate = True
             trimesh_obj.process()
         return trimesh_obj
+    
+    def bounding_box(self):
+        max_coords = np.max(self._trimesh_obj.vertices, axis=0)
+        min_coords = np.min(self._trimesh_obj.vertices, axis=0)
+        return min_coords, max_coords

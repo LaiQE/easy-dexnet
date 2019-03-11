@@ -20,3 +20,19 @@ min_contact_dist: 0.0025
 
 # 不同抓取点之间的容许的最小距离
 grasp_dist_thresh: 0.0005
+
+metrics:
+  quality_method: ferrari_canny_L1
+  friction_coef: 0.5
+  num_cone_faces: 8
+  soft_fingers: 1
+  all_contacts_required: 1
+
+  # optional deterministic parameters
+  torque_scaling: 0.01
+  wrench_norm_thresh: 0.001
+  wrench_regularizer: 0.0000000001
+
+  # 夹爪参数
+  finger_radius: 0.01
+  force_limits: 20.0

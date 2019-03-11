@@ -97,7 +97,7 @@ class Grasp_2f(object):
             logging.debug('close_fingers 接触点寻找失败'+str(is_c0)+str(is_c0))
             return False, None, None
 
-        return True, c0, c1
+        return True, (c0, c1)
 
     @staticmethod
     def grasp_from_one_contact():

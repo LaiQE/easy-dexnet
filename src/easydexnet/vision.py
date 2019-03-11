@@ -16,7 +16,7 @@ class DexScene(pyrender.Scene):
         n = pyrender.Node(mesh=render_mesh, matrix=matrix)
         self.add_node(n)
 
-    def add_grisp(self, grisp, matrix=np.eye(4), radius=0.0025, color='red'):
+    def add_grasp(self, grasp, matrix=np.eye(4), radius=0.0025, color='red'):
         def vector_to_rotation(vector):
             z = np.array(vector)
             z = z / np.linalg.norm(z)
@@ -25,25 +25,26 @@ class DexScene(pyrender.Scene):
             x = x / np.linalg.norm(x)
             y = np.cross(z, x)
             return np.c_[x, y, z]
-        grisp_vision = trimesh.creation.capsule(grisp.width, radius)
-        rotation = vector_to_rotation(grisp.axis)
+        grasp_vision = trimesh.creation.capsule(grasp.width, radius)
+        rotation = vector_to_rotation(grasp.axis)
         trasform = np.eye(4)
         trasform[:3, :3] = rotation
-        center = grisp.center - (grisp.width / 2) * grisp.axis
+        center = grasp.center - (grasp.width / 2) * grasp.axis
         trasform[:3, 3] = center
-        grisp_vision.apply_transform(trasform)
+        grasp_vision.apply_transform(trasform)
         if isinstance(color, (str)):
             color = trimesh.visual.color.hex_to_rgba(cnames[color])
-        grisp_vision.visual.face_colors = color
-        grisp_vision.visual.vertex_colors = color
-        render_mesh = pyrender.Mesh.from_trimesh(grisp_vision)
+        print(color)
+        grasp_vision.visual.face_colors = color
+        grasp_vision.visual.vertex_colors = color
+        render_mesh = pyrender.Mesh.from_trimesh(grasp_vision)
         n = pyrender.Node(mesh=render_mesh, matrix=matrix)
         self.add_node(n)
 
-    def add_grisp_center(self, grisp, matrix=np.eye(4), radius=0.003, color='black'):
+    def add_grasp_center(self, grasp, matrix=np.eye(4), radius=0.003, color='black'):
         point_vision = trimesh.creation.uv_sphere(radius)
         trasform = np.eye(4)
-        trasform[:3, 3] = grisp.center
+        trasform[:3, 3] = grasp.center
         point_vision.apply_transform(trasform)
         if isinstance(color, (str)):
             color = trimesh.visual.color.hex_to_rgba(cnames[color])

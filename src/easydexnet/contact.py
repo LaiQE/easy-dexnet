@@ -85,9 +85,10 @@ class Contact(object):
             num_cone_faces = self._num_cone_faces
         if friction_coef is None:
             friction_coef = self._friction_cone
-            
-        if self._friction_cone is not None and self._normal is not None:
-            return True, self._friction_cone, self._normal
+        
+        # 这里不能加, 每次计算的摩擦锥可能都不一样, 摩擦系数可能变
+        # if self._friction_cone is not None and self._normal is not None:
+        #     return True, self._friction_cone, self._normal
 
         # 获取切向量
         in_normal, t1, t2 = self.tangents()
@@ -102,7 +103,7 @@ class Contact(object):
 
         # 如果切面方向力大于最大静摩擦, 则生成失败
         if friction_force_mag < tan_force_mag:
-            return False, self._friction_cone, self._normal
+            return False, None, self._normal
 
         # 计算摩擦锥
         force = in_normal
@@ -112,8 +113,8 @@ class Contact(object):
                 t2 * np.sin(2 * np.pi * (float(j) / num_cone_faces))
             cone_support[:, j] = force + friction_coef * tan_vec
 
-        self._friction_cone = cone_support
-        return True, self._friction_cone, self._normal
+        # self._friction_cone = cone_support
+        return True, cone_support, self._normal
 
     def torques(self, forces):
         """求出接触点上一组力矢量所能施加的力矩
@@ -125,4 +126,14 @@ class Contact(object):
         moment_arm = self._moment_arm
         for i in range(num_forces):
             torques[:, i] = np.cross(moment_arm, forces[:, i])
-        return torques
+        return True, torques
+    
+    def normal_force_magnitude(self):
+        """ 计算法线方向上的力的大小
+        """
+        normal_force_mag = 1.0
+        if self._grasp_direction is not None and self._normal is not None:
+            in_normal = -self._normal
+            in_direction_norm = self._grasp_direction
+            normal_force_mag = np.dot(in_direction_norm, in_normal)
+        return max(normal_force_mag, 0.0)

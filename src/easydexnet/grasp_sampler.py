@@ -7,6 +7,12 @@ from .quality import force_closure_2f
 
 
 class GraspSampler_2f(object):
+    """ 二指夹爪抓取点采样器，采用对映采样器
+    1. 随机均匀采样物体表面的点
+    2. 在该点的摩擦锥内随机采样一个抓取方向
+    3. 沿着这个方向采样另一个抓取点
+    4. 检查抓取点
+    """
     def __init__(self, width=None, min_contact_dist=None, config=None):
         """
         width : 夹爪的最大宽度
@@ -158,13 +164,13 @@ class GraspSampler_2f(object):
 
                 # 获取真实的接触点 (之前的接触点容易会变化)
                 for g in grasp:
-                    success, c0, c1 = g.close_fingers(mesh)
+                    success, c = g.close_fingers(mesh)
                     if not success:
                         logging.debug('sample_grasps 夹爪闭合失败')
                         continue
 
                     # 检查摩擦圆锥是否力闭合
-                    if force_closure_2f(c0, c1, self._friction_coef):
+                    if force_closure_2f(c[0], c[1], self._friction_coef):
                         grasps.append(g)
                         logging.info('sample_grasps 成功生成一个抓取')
 
