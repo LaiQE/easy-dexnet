@@ -29,7 +29,7 @@ metrics:
   all_contacts_required: 1
 
   # optional deterministic parameters
-  torque_scaling: 0.01
+  torque_scaling: 1000
   wrench_norm_thresh: 0.001
   wrench_regularizer: 0.0000000001
 

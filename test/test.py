@@ -13,7 +13,7 @@ except Exception as e:
     pass
 
 
-TEST_OBJ_FILE = os.path.join(ROOT_PATH, r'data/bar_clamp.obj')
+TEST_OBJ_FILE = os.path.join(ROOT_PATH, r'data/test.obj')
 TEST_LOG_FILE = os.path.join(ROOT_PATH, 'test/test.log')
 TEST_CFG_FILE = os.path.join(ROOT_PATH, 'config/test.yaml')
 
@@ -46,13 +46,14 @@ def main():
     print('夹爪生成成功')
     metrics = config['metrics']
     quality = [dex.grasp_quality(grasp, mesh, metrics) for grasp in grasps]
-    quality = (quality - np.min(quality)) / (np.max(quality) - np.min(quality))
     print(quality)
+    quality_s = (quality - np.min(quality)) / (np.max(quality) - np.min(quality))
+    
     scene = dex.DexScene(ambient_light=[0.02, 0.02, 0.02],
                          bg_color=[1.0, 1.0, 1.0])
     scene.add_obj(mesh)
-    for g,q in zip(grasps, quality):
-        if q > 0.5：
+    for g,q,qr in zip(grasps, quality_s, quality):
+        if q < 0.005:
             c = q * np.array([255, 0, -255]) + np.array([0, 0, 255])
             c = np.concatenate((c,[255]))
             c = c.astype(int)

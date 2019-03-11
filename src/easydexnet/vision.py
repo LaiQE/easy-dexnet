@@ -34,7 +34,6 @@ class DexScene(pyrender.Scene):
         grasp_vision.apply_transform(trasform)
         if isinstance(color, (str)):
             color = trimesh.visual.color.hex_to_rgba(cnames[color])
-        print(color)
         grasp_vision.visual.face_colors = color
         grasp_vision.visual.vertex_colors = color
         render_mesh = pyrender.Mesh.from_trimesh(grasp_vision)
