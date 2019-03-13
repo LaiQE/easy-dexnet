@@ -12,6 +12,8 @@ try:
 except Exception as e:
     pass
 
+# 测试一下github的同步功能，这段文字来自于ubuntu
+
 
 TEST_OBJ_FILE = os.path.join(ROOT_PATH, r'data/test.obj')
 TEST_LOG_FILE = os.path.join(ROOT_PATH, 'test/test.log')
