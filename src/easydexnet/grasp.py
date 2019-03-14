@@ -17,6 +17,7 @@ class Grasp_2f(object):
         self._center = center
         self._axis = axis / np.linalg.norm(axis)
         self._max_grasp_width = width
+        self._config = config
         if width is None and config is not None:
             self._max_grasp_width = config['grispper']['max_width']
         self._min_grasp_width = min_width
@@ -41,7 +42,7 @@ class Grasp_2f(object):
         point0 = self._center - half_axis
         point1 = self._center + half_axis
         return point0, point1
-    
+
     @property
     def width(self):
         return self._max_grasp_width
@@ -96,9 +97,66 @@ class Grasp_2f(object):
         if not (is_c0 and is_c1):
             logging.debug('close_fingers 接触点寻找失败'+str(is_c0)+str(is_c0))
             return False, None, None
+        contacts = [c0, c1]
 
-        return True, (c0, c1)
+        return True, contacts
 
-    @staticmethod
-    def grasp_from_one_contact():
-        pass
+    def _check_approch(self, mesh, point, axis, dis):
+        """ 检查路径上是否有碰撞
+        mesh : 网格
+        point : 检查点
+        axis : 检查的方向,检查(point,point+axis*dis)
+        dis : 检查的距离 """
+        points, _ = mesh.intersect_line(point, point+axis*dis)
+        if points.shape[0] > 0:
+            return False
+        return True
+
+    def get_approch(self, poses):
+        """ 计算在抓取路径, 即与z轴最近的方向 """
+        poses_r = poses.matrix[:3, :3]
+        # 稳定姿态的z轴在物体坐标下的表示
+        poses_z = poses_r[2, :]
+        axis = self._axis
+        # 计算z轴在抓取轴为法线的平面上的投影作为抓取路径的反方向
+        approach = poses_z - axis*(poses_z.dot(axis)/axis.dot(axis))
+        approach_L = np.linalg.norm(approach)
+        poses_z_L = np.linalg.norm(poses_z)
+        angle = np.arccos(poses_z.dot(approach)/(approach_L*poses_z_L))
+        angle = angle * 180 / np.pi
+        approach = -approach / np.linalg.norm(approach)
+        return approach, angle
+
+    def check_approach(self, mesh, poses, config):
+        """ 检查夹取路径上是否有碰撞 """
+        # 获取抓取路径
+        approch, _ = self.get_approch(poses)
+        check_cfg = config['collision_checker']
+        # 夹爪宽度方向
+        width_axis = np.cross(approch, self._axis)
+        w_axis = width_axis / np.linalg.norm(width_axis)
+        check_num = max(check_cfg['checker_point_num'], 3)
+        axis_offiset = check_cfg['axis_offiset']
+        width_offset = check_cfg['width_offset']
+        # 轴向补偿列表
+        aixs_list = np.linspace(-axis_offiset/2, axis_offiset/2, check_num)
+        # 宽度补偿列表
+        width_list = np.linspace(-width_offset/2, width_offset/2, check_num)
+
+        for p in self.endpoints:
+            axis = self._axis
+            # 最终检查列表
+            check_list = [p + a*axis + w * w_axis
+                          for a in aixs_list for w in width_list]
+            for check_point in check_list:
+                result = self._check_approch(mesh, check_point,
+                                             -approch, check_cfg['test_dist'])
+                if not result:
+                    return False
+        return True
+
+    def apply_transform(self, matrix):
+        center = np.r_[self.center, 1]
+        center = matrix.dot(center)[:3]
+        axis = matrix[:3, :3].dot(self._axis)
+        return Grasp_2f(center, axis, config=self._config)

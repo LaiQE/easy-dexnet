@@ -21,6 +21,9 @@ min_contact_dist: 0.0025
 # 不同抓取点之间的容许的最小距离
 grasp_dist_thresh: 0.0005
 
+# 每个物体采样的数目
+num_sample: 25
+
 metrics:
   quality_method: ferrari_canny_L1
   friction_coef: 0.5
@@ -36,3 +39,16 @@ metrics:
   # 夹爪参数
   finger_radius: 0.01
   force_limits: 20.0
+
+# 碰撞检测器配置
+collision_checker:
+  # 宽度补偿, 假设夹爪存在一定的宽度, 即夹爪的横向宽度
+  width_offset: 0.005
+  # 深度补偿, 在夹爪抓取路径方向上进行补偿
+  depth_offiset: 0.005
+  # 轴向补偿: 在抓取轴方向上进行补偿
+  axis_offiset: 0.005
+  # 检测点数目
+  checker_point_num: 5
+  # 检查距离
+  test_dist: 0.5

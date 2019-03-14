@@ -34,6 +34,20 @@ def load_config(file):
         config = yaml.load(f)
     return config
 
+def display(mesh, grasps, quality_s=None):
+    scene = dex.DexScene(ambient_light=[0.02, 0.02, 0.02],
+                         bg_color=[1.0, 1.0, 1.0])
+    scene.add_obj(mesh)
+    if quality_s is None:
+        quality_s = [1] * len(grasps)
+    for g,q in zip(grasps, quality_s):
+        c = q * np.array([255, 0, -255]) + np.array([0, 0, 255])
+        c = np.concatenate((c,[255]))
+        c = c.astype(int)
+        scene.add_grasp(g, color=c)
+        scene.add_grasp_center(g)
+    pyrender.Viewer(scene, use_raymond_lighting=True)
+
 
 def main():
     config_logging(TEST_LOG_FILE)
@@ -42,26 +56,21 @@ def main():
     print('初始配置成功')
 
     tri_mesh = trimesh.load_mesh(TEST_OBJ_FILE, validate=True)
-    mesh = dex.BaseMesh(tri_mesh, name=file_name)
-    sampler = dex.GraspSampler_2f(config=config)
-    grasps = sampler.generate_grasps(mesh, 25)
-    print('夹爪生成成功')
-    metrics = config['metrics']
-    quality = [dex.grasp_quality(grasp, mesh, metrics) for grasp in grasps]
-    print(quality)
+    dex_obj = dex.DexObject.from_trimesh(tri_mesh, config, name=file_name)
+    quality = dex_obj.qualitis
     quality_s = (quality - np.min(quality)) / (np.max(quality) - np.min(quality))
+    display(dex_obj.mesh, dex_obj.grasps, quality_s)
+    pose = dex_obj.poses[0]
+    grasps = []
+    quality = []
+    for g,q in zip(dex_obj.grasps,quality_s):
+        if g.check_approach(dex_obj.mesh, pose, config) and \
+            g.get_approch(pose)[1] < 40:
+            grasps.append(g.apply_transform(pose.matrix))
+            quality.append(q)
+    mesh = dex_obj.mesh.apply_transform(pose.matrix)
+    display(mesh, grasps, quality)
     
-    scene = dex.DexScene(ambient_light=[0.02, 0.02, 0.02],
-                         bg_color=[1.0, 1.0, 1.0])
-    scene.add_obj(mesh)
-    for g,q,qr in zip(grasps, quality_s, quality):
-        if q < 0.005:
-            c = q * np.array([255, 0, -255]) + np.array([0, 0, 255])
-            c = np.concatenate((c,[255]))
-            c = c.astype(int)
-            scene.add_grasp(g, color=c)
-            scene.add_grasp_center(g)
-    pyrender.Viewer(scene, use_raymond_lighting=True)
 if __name__ == "__main__":
     
     # print()

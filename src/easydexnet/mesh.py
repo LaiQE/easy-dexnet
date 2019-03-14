@@ -75,3 +75,7 @@ class BaseMesh(object):
         max_coords = np.max(self._trimesh_obj.vertices, axis=0)
         min_coords = np.min(self._trimesh_obj.vertices, axis=0)
         return min_coords, max_coords
+    
+    def apply_transform(self, matrix):
+        tri = self._trimesh_obj.apply_transform(matrix)
+        return BaseMesh(tri, self._name)
