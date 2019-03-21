@@ -79,13 +79,20 @@ camera:
   min_roll: -0.2
   max_roll: 0.2 # degrees
   # 物体偏离中心的距离, 这里直接转换成相机位置的变换，物体还是放在原点
-  min_x: -0.1
-  max_x: 0.1
-  min_y: -0.1
-  max_y: 0.1
+  # min_x: -0.1
+  # max_x: 0.1
+  # min_y: -0.1
+  # max_y: 0.1
+  min_x: 0
+  max_x: 0
+  min_y: 0
+  max_y: 0
   # 渲染的图片的大小
   im_width: 600
   im_height: 600
+
+  obj_color: orange
+  table_color: white
 
   num_radii: 2
   num_elev: 2

@@ -78,7 +78,8 @@ class BaseMesh(object):
         return min_coords, max_coords
     
     def apply_transform(self, matrix):
-        tri = self._trimesh_obj.apply_transform(matrix)
+        tri = self._trimesh_obj.copy()
+        tri = tri.apply_transform(matrix)
         return BaseMesh(tri, self._name)
     
     @staticmethod

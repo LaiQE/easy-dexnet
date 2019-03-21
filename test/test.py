@@ -50,6 +50,32 @@ def display(mesh, grasps, quality_s=None):
         scene.add_grasp_center(g)
     pyrender.Viewer(scene, use_raymond_lighting=True)
 
+def plot_grasp2d(grasp_2d, size):
+    def plot_2p(p0, p1):
+        x = [p0[0], p1[0]]
+        y = [p0[1], p1[1]]
+        plt.plot(x,y)
+    p0,p1 = grasp_2d.endpoints
+    # axis = grasp_2d.axis
+    # axis_T = np.array([-axis[1], axis[0]])
+    # axis_T = axis_T / np.linalg.norm(axis_T)
+    # p00 = p0 + size * axis_T
+    # p00 = p00.astype(np.int)
+    # p01 = p0 - size * axis_T
+    # p01 = p01.astype(np.int)
+    # p10 = p1 + size * axis_T
+    # p10 = p10.astype(np.int)
+    # p11 = p1 - size * axis_T
+    # p11 = p11.astype(np.int)
+    plot_2p(p0, p1)
+    # plot_2p(p00, p01)
+    # plot_2p(p10, p11)
+
+def plot_2p(p0, p1):
+    x = [p0[0], p1[0]]
+    y = [p0[1], p1[1]]
+    plt.plot(x,y)
+
 
 def main():
     config_logging(TEST_LOG_FILE)
@@ -77,14 +103,35 @@ def test_render():
     mesh = dex.BaseMesh.from_file(TEST_OBJ_FILE)
     table = dex.BaseMesh.from_file(TEST_TABLE_FILE)
     poses = dex.DexObject.get_poses(mesh, 0.0)
-    render = dex.ImageRender(mesh, poses[0], table, config)
-    m = mesh.center_mass
-    print(render.render_obj_point(m))
-    # _, depth = render.data
+    grasps = dex.DexObject.get_grasps(mesh, config)
+    
+    pose = poses[0]
+
+    vaild_grasps = []
+    for g in grasps:
+        if g.check_approach(mesh, pose, config) and \
+            g.get_approch(pose)[1] < 40:
+            vaild_grasps.append(g)
+    
+    vaild_grasps_T = [g.apply_transform(pose.matrix) for g in vaild_grasps]
+    mesh_T = mesh.apply_transform(pose.matrix)
+    # display(mesh_T, vaild_grasps_T)
+    
+    render = dex.ImageRender(mesh, pose, table, config)
+    for g in vaild_grasps:
+        render.scene.add_grasp(g, render._obj_matrix)
+    pyrender.Viewer(render.scene, use_raymond_lighting=True)
+    rgb, depth = render.data
+    plt.imshow(rgb)
+    for g in vaild_grasps:
+        plot_2p(*render.render_grasp(g).endpoints)
+    plt.show()
+    display(mesh_T, vaild_grasps_T)
+
     # plt.figure()
     # plt.subplot(1,2,1)
     # plt.axis('off')
-    # plt.imshow(image)
+    # plt.imshow(rgb)
     # plt.subplot(1,2,2)
     # plt.axis('off')
     # plt.imshow(depth, cmap=plt.cm.gray_r)

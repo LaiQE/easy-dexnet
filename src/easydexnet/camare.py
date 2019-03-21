@@ -89,6 +89,7 @@ class RandomCamera(Camera):
         if camera_y_par_obj[2] > 0:
             camera_y_par_obj = -camera_y_par_obj
             camera_x_par_obj = -camera_x_par_obj.copy()
+        # camera_y_par_obj = -camera_y_par_obj
 
         # 旋转相机
         R_obj_camera_par = np.c_[camera_x_par_obj,

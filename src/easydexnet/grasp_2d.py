@@ -13,6 +13,18 @@ class Grasp2D(object):
         self._angle = angle
         self._depth = depth
         self._width_px = width
+    
+    @property
+    def center(self):
+        return self._center.astype(np.int)
+    
+    @property
+    def angle(self):
+        return self._angle
+    
+    @property
+    def depth(self):
+        return self._depth
 
     @property
     def axis(self):
@@ -22,9 +34,11 @@ class Grasp2D(object):
     @property
     def endpoints(self):
         """ Returns the grasp endpoints """
-        p1 = self._center - (float(self._width_px) / 2) * self.axis
-        p2 = self._center + (float(self._width_px) / 2) * self.axis
-        return p1, p2
+        p0 = self._center - (float(self._width_px) / 2) * self.axis
+        p1 = self._center + (float(self._width_px) / 2) * self.axis
+        p0 = p0.astype(np.int)
+        p1 = p1.astype(np.int)
+        return p0, p1
 
     @property
     def feature_vec(self):
