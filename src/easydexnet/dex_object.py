@@ -43,6 +43,11 @@ class DexObject(object):
     def from_trimesh(tri_mesh, config, name=None):
         mesh = BaseMesh(tri_mesh, name)
         return DexObject(mesh, config)
+    
+    @staticmethod
+    def from_file(file_path, config, name=None):
+        mesh = BaseMesh.from_file(file_path, name)
+        return DexObject(mesh, config)
 
     @staticmethod
     def get_poses(mesh, threshold):

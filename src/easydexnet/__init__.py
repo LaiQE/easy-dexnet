@@ -9,3 +9,4 @@ from .stable_poses import StablePoses
 from .vision import DexScene
 from .quality import grasp_quality
 from .dex_object import DexObject
+from .render import ImageRender

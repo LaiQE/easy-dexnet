@@ -4,6 +4,7 @@ import logging
 import trimesh
 import pyrender
 import numpy as np
+import matplotlib.pyplot as plt
 from ruamel.yaml import YAML
 ROOT_PATH = r'H:\Robot\easy-dexnet'
 sys.path.append(os.path.abspath(os.path.join(ROOT_PATH, 'src')))
@@ -15,9 +16,10 @@ except Exception as e:
 # 测试一下github的同步功能，这段文字来自于ubuntu
 
 
-TEST_OBJ_FILE = os.path.join(ROOT_PATH, r'data/test.obj')
+TEST_OBJ_FILE = os.path.join(ROOT_PATH, r'data/bar_clamp.obj')
 TEST_LOG_FILE = os.path.join(ROOT_PATH, 'test/test.log')
 TEST_CFG_FILE = os.path.join(ROOT_PATH, 'config/test.yaml')
+TEST_TABLE_FILE = os.path.join(ROOT_PATH, r'data/table.obj')
 
 
 def config_logging(file=None, level=logging.DEBUG):
@@ -52,11 +54,8 @@ def display(mesh, grasps, quality_s=None):
 def main():
     config_logging(TEST_LOG_FILE)
     config = load_config(TEST_CFG_FILE)
-    file_name = os.path.splitext(os.path.basename(TEST_OBJ_FILE))[0]
-    print('初始配置成功')
 
-    tri_mesh = trimesh.load_mesh(TEST_OBJ_FILE, validate=True)
-    dex_obj = dex.DexObject.from_trimesh(tri_mesh, config, name=file_name)
+    dex_obj = dex.DexObject.from_file(TEST_OBJ_FILE, config)
     quality = dex_obj.qualitis
     quality_s = (quality - np.min(quality)) / (np.max(quality) - np.min(quality))
     display(dex_obj.mesh, dex_obj.grasps, quality_s)
@@ -70,8 +69,30 @@ def main():
             quality.append(q)
     mesh = dex_obj.mesh.apply_transform(pose.matrix)
     display(mesh, grasps, quality)
+
+def test_render():
+    config_logging(TEST_LOG_FILE)
+    config = load_config(TEST_CFG_FILE)
+
+    mesh = dex.BaseMesh.from_file(TEST_OBJ_FILE)
+    table = dex.BaseMesh.from_file(TEST_TABLE_FILE)
+    poses = dex.DexObject.get_poses(mesh, 0.0)
+    render = dex.ImageRender(mesh, poses[0], table, config)
+    m = mesh.center_mass
+    print(render.render_obj_point(m))
+    # _, depth = render.data
+    # plt.figure()
+    # plt.subplot(1,2,1)
+    # plt.axis('off')
+    # plt.imshow(image)
+    # plt.subplot(1,2,2)
+    # plt.axis('off')
+    # plt.imshow(depth, cmap=plt.cm.gray_r)
+    # plt.imshow(depth)
+    # plt.colorbar()
+    # plt.show()
     
 if __name__ == "__main__":
     
     # print()
-    main()
+    test_render()

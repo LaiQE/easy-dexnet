@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
+import os
 import trimesh
 import numpy as np
 from tvtk.api import tvtk
@@ -79,3 +80,10 @@ class BaseMesh(object):
     def apply_transform(self, matrix):
         tri = self._trimesh_obj.apply_transform(matrix)
         return BaseMesh(tri, self._name)
+    
+    @staticmethod
+    def from_file(file_path, name=None):
+        if name is None:
+            name = os.path.splitext(os.path.basename(file_path))[0] 
+        tri_mesh = trimesh.load_mesh(file_path, validate=True)
+        return BaseMesh(tri_mesh, name)

@@ -52,3 +52,59 @@ collision_checker:
   checker_point_num: 5
   # 检查距离
   test_dist: 0.5
+
+
+auto_render_images: 0
+
+# 相机的参数
+camera:
+  # 相机可视角度
+  min_yfov: 60
+  max_yfov: 70
+  # 相机纵横比
+  aspectRatio: 1.0
+  # 相机模型投影近平面距离,即焦距
+  min_znear: 0.05
+  max_znear: 0.07
+  # 相机离原点的距离
+  min_radius: 0.65
+  max_radius: 0.75
+  # 相机位置与z轴的夹角
+  min_elev: 0.1
+  max_elev: 5.0 # in degrees
+  # 相机位置的方位角, 与x轴的夹角
+  min_az: 0.0
+  max_az: 360.0 # degrees
+  # 相机坐标绕z轴旋转的角度
+  min_roll: -0.2
+  max_roll: 0.2 # degrees
+  # 物体偏离中心的距离, 这里直接转换成相机位置的变换，物体还是放在原点
+  min_x: -0.1
+  max_x: 0.1
+  min_y: -0.1
+  max_y: 0.1
+  # 渲染的图片的大小
+  im_width: 600
+  im_height: 600
+
+  num_radii: 2
+  num_elev: 2
+  num_az: 8
+  num_roll: 1
+  min_p: 0.01
+
+env_rv_params:
+  # Camera intrinsics
+  min_f: 520
+  max_f: 530
+  min_cx: 299.5
+  max_cx: 299.5
+  min_cy: 299.5
+  max_cy: 299.5
+  im_width: 600
+  im_height: 600
+
+  # Camera pose
+
+
+  
