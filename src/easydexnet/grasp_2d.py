@@ -19,6 +19,10 @@ class Grasp2D(object):
         return self._center.astype(np.int)
     
     @property
+    def center_float(self):
+        return self._center
+    
+    @property
     def angle(self):
         return self._angle
     

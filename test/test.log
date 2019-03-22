@@ -1,538 +1,226 @@
-2019-03-21 20:55:05,203 - DEBUG - loaded mesh using load_wavefront
-2019-03-21 20:55:05,205 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:05,207 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:05,207 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:05,207 - DEBUG - area_faces was not in cache, executed in 0.000000
-2019-03-21 20:55:05,208 - DEBUG - load_mesh executed in 0.0190 seconds.
-2019-03-21 20:55:05,334 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:05,334 - DEBUG - edges was not in cache, executed in 0.000000
-2019-03-21 20:55:05,335 - DEBUG - edges_sorted was not in cache, executed in 0.001000
-2019-03-21 20:55:05,335 - DEBUG - is_watertight was not in cache, executed in 0.001000
-2019-03-21 20:55:05,336 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:05,336 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:05,337 - DEBUG - mass_properties was not in cache, executed in 0.001999
-2019-03-21 20:55:05,343 - DEBUG - loaded mesh using load_wavefront
-2019-03-21 20:55:05,344 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:05,345 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:05,345 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:05,345 - DEBUG - area_faces was not in cache, executed in 0.000000
-2019-03-21 20:55:05,346 - DEBUG - load_mesh executed in 0.0090 seconds.
-2019-03-21 20:55:05,348 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:05,348 - DEBUG - edges was not in cache, executed in 0.000000
-2019-03-21 20:55:05,348 - DEBUG - edges_sorted was not in cache, executed in 0.000000
-2019-03-21 20:55:05,349 - DEBUG - is_watertight was not in cache, executed in 0.001000
-2019-03-21 20:55:05,349 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:05,349 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:05,350 - DEBUG - mass_properties was not in cache, executed in 0.000999
-2019-03-21 20:55:05,358 - DEBUG - 4 items cleared from cache: ['triangles_cross', 'triangles_center', 'area_faces', 'centroid']
-2019-03-21 20:55:05,358 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:05,359 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:05,359 - DEBUG - edges was not in cache, executed in 0.000000
-2019-03-21 20:55:05,360 - DEBUG - edges_sorted was not in cache, executed in 0.000000
-2019-03-21 20:55:05,360 - DEBUG - is_watertight was not in cache, executed in 0.000999
-2019-03-21 20:55:05,360 - DEBUG - is_winding_consistent was not in cache, executed in 0.000999
-2019-03-21 20:55:05,360 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:05,361 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:05,361 - DEBUG - mass_properties was not in cache, executed in 0.000999
-2019-03-21 20:55:05,361 - DEBUG - fix_normals executed in 0.0020 seconds.
-2019-03-21 20:55:05,362 - DEBUG - convex_hull was not in cache, executed in 0.011993
-2019-03-21 20:55:05,366 - DEBUG - 4 items cleared from cache: ['triangles_cross', 'triangles_center', 'area_faces', 'centroid']
-2019-03-21 20:55:05,366 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:05,367 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:05,367 - DEBUG - edges was not in cache, executed in 0.000000
-2019-03-21 20:55:05,367 - DEBUG - edges_sorted was not in cache, executed in 0.000000
-2019-03-21 20:55:05,368 - DEBUG - is_watertight was not in cache, executed in 0.000999
-2019-03-21 20:55:05,368 - DEBUG - is_winding_consistent was not in cache, executed in 0.000999
-2019-03-21 20:55:05,368 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:05,369 - DEBUG - triangles_cross was not in cache, executed in 0.000999
-2019-03-21 20:55:05,369 - DEBUG - mass_properties was not in cache, executed in 0.000999
-2019-03-21 20:55:05,369 - DEBUG - fix_normals executed in 0.0020 seconds.
-2019-03-21 20:55:05,369 - DEBUG - convex_hull was not in cache, executed in 0.006996
-2019-03-21 20:55:05,370 - DEBUG - triangles_center was not in cache, executed in 0.000000
-2019-03-21 20:55:05,371 - DEBUG - face_adjacency was not in cache, executed in 0.000000
-2019-03-21 20:55:05,423 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:05,425 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:05,426 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:05,426 - DEBUG - bounds was not in cache, executed in 0.000000
-2019-03-21 20:55:05,426 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:05,428 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:05,428 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:05,428 - DEBUG - bounds was not in cache, executed in 0.000000
-2019-03-21 20:55:05,429 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:05,430 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:05,431 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:05,431 - DEBUG - bounds was not in cache, executed in 0.000999
-2019-03-21 20:55:05,431 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:05,433 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:05,433 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:05,433 - DEBUG - bounds was not in cache, executed in 0.000000
-2019-03-21 20:55:05,433 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:05,435 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:05,435 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:05,435 - DEBUG - bounds was not in cache, executed in 0.000000
-2019-03-21 20:55:05,436 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:05,437 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:05,438 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:05,438 - DEBUG - bounds was not in cache, executed in 0.000999
-2019-03-21 20:55:05,438 - DEBUG - area_faces was not in cache, executed in 0.000000
-2019-03-21 20:55:05,439 - DEBUG - generating face normals
-2019-03-21 20:55:05,453 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,455 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,457 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,460 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,462 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,463 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,465 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,466 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-21 20:55:05,467 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,469 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,471 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,474 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,477 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,479 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,480 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,482 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,483 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,486 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,488 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,490 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,492 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,495 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-21 20:55:05,496 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-21 20:55:05,498 - DEBUG - _find_grasp 成功生成2个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,502 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,503 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,506 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,508 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,509 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,512 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,515 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,518 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,521 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-21 20:55:05,522 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,525 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,528 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,531 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,532 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,534 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,535 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-21 20:55:05,536 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-21 20:55:05,537 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-21 20:55:05,538 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-21 20:55:05,539 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,542 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,542 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,544 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,546 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,548 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,551 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,552 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,555 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,557 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,558 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,561 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,564 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,567 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-21 20:55:05,568 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,570 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,571 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,574 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,577 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,580 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,582 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,583 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,585 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,586 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-21 20:55:05,587 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-21 20:55:05,588 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,591 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,594 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-21 20:55:05,595 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,597 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,598 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,600 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,601 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,603 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,604 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,607 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,609 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,610 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,612 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,613 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,615 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,617 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,619 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,620 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,621 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,623 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-21 20:55:05,624 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-21 20:55:05,625 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,627 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,628 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,630 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,631 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,633 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,634 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,637 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,639 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,640 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,643 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,644 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-21 20:55:05,645 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-21 20:55:05,646 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,649 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,652 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,654 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,655 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,657 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,658 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-21 20:55:05,659 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
-2019-03-21 20:55:05,661 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,663 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,666 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,669 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,672 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,675 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,677 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,678 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,680 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,681 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,683 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,685 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,688 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,690 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,691 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,694 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,697 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,700 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,703 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,705 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,706 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,708 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,710 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,712 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,713 - DEBUG - _find_grasp 成功生成2个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,715 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,717 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,718 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,721 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,723 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,725 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,727 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:05,728 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
-2019-03-21 20:55:05,730 - INFO - sample_grasps 成功生成一个抓取
-2019-03-21 20:55:06,149 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:06,150 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:06,151 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:06,152 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:06,152 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:06,152 - DEBUG - area_faces was not in cache, executed in 0.000000
-2019-03-21 20:55:06,155 - DEBUG - is_empty was not in cache, executed in 0.000999
-2019-03-21 20:55:06,155 - DEBUG - edges was not in cache, executed in 0.000000
-2019-03-21 20:55:06,155 - DEBUG - edges_sorted was not in cache, executed in 0.000000
-2019-03-21 20:55:06,156 - DEBUG - is_watertight was not in cache, executed in 0.001999
-2019-03-21 20:55:06,156 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:06,156 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:06,157 - DEBUG - mass_properties was not in cache, executed in 0.001012
-2019-03-21 20:55:06,160 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:06,161 - DEBUG - vertex_normals was not in cache, executed in 0.000985
-2019-03-21 20:55:06,579 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:06,580 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:06,581 - DEBUG - generating face normals
-2019-03-21 20:55:06,581 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:06,582 - DEBUG - triangles_cross was not in cache, executed in 0.000999
-2019-03-21 20:55:06,583 - DEBUG - vertex_normals was not in cache, executed in 0.002999
-2019-03-21 20:55:06,594 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:06,598 - DEBUG - faces_sparse was not in cache, executed in 0.001999
-2019-03-21 20:55:06,599 - DEBUG - generating face normals
-2019-03-21 20:55:06,600 - DEBUG - triangles was not in cache, executed in 0.000999
-2019-03-21 20:55:06,603 - DEBUG - triangles_cross was not in cache, executed in 0.001000
-2019-03-21 20:55:06,605 - DEBUG - vertex_normals was not in cache, executed in 0.008996
-2019-03-21 20:55:06,616 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:06,617 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:06,618 - DEBUG - generating face normals
-2019-03-21 20:55:06,618 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:06,619 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:06,621 - DEBUG - vertex_normals was not in cache, executed in 0.003006
-2019-03-21 20:55:06,625 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:06,627 - DEBUG - faces_sparse was not in cache, executed in 0.000999
-2019-03-21 20:55:06,627 - DEBUG - generating face normals
-2019-03-21 20:55:06,628 - DEBUG - triangles was not in cache, executed in 0.001000
-2019-03-21 20:55:06,629 - DEBUG - triangles_cross was not in cache, executed in 0.000999
-2019-03-21 20:55:06,631 - DEBUG - vertex_normals was not in cache, executed in 0.003999
-2019-03-21 20:55:06,636 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:06,637 - DEBUG - faces_sparse was not in cache, executed in 0.001000
-2019-03-21 20:55:06,637 - DEBUG - generating face normals
-2019-03-21 20:55:06,639 - DEBUG - triangles was not in cache, executed in 0.001998
-2019-03-21 20:55:06,640 - DEBUG - triangles_cross was not in cache, executed in 0.000999
-2019-03-21 20:55:06,642 - DEBUG - vertex_normals was not in cache, executed in 0.004997
-2019-03-21 20:55:06,647 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:06,648 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:06,648 - DEBUG - generating face normals
-2019-03-21 20:55:06,649 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:06,650 - DEBUG - triangles_cross was not in cache, executed in 0.000999
-2019-03-21 20:55:06,653 - DEBUG - vertex_normals was not in cache, executed in 0.004997
-2019-03-21 20:55:06,659 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:06,660 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:06,661 - DEBUG - generating face normals
-2019-03-21 20:55:06,661 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:06,662 - DEBUG - triangles_cross was not in cache, executed in 0.000999
-2019-03-21 20:55:06,663 - DEBUG - vertex_normals was not in cache, executed in 0.002999
-2019-03-21 20:55:06,671 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:06,672 - DEBUG - faces_sparse was not in cache, executed in 0.000999
-2019-03-21 20:55:06,672 - DEBUG - generating face normals
-2019-03-21 20:55:06,673 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:06,673 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:06,674 - DEBUG - vertex_normals was not in cache, executed in 0.002999
-2019-03-21 20:55:06,679 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:06,680 - DEBUG - faces_sparse was not in cache, executed in 0.000999
-2019-03-21 20:55:06,680 - DEBUG - generating face normals
-2019-03-21 20:55:06,680 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:06,681 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:06,682 - DEBUG - vertex_normals was not in cache, executed in 0.002999
-2019-03-21 20:55:06,687 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:06,688 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:06,689 - DEBUG - generating face normals
-2019-03-21 20:55:06,689 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:06,690 - DEBUG - triangles_cross was not in cache, executed in 0.001000
-2019-03-21 20:55:06,691 - DEBUG - vertex_normals was not in cache, executed in 0.002997
-2019-03-21 20:55:06,696 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:06,697 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:06,698 - DEBUG - generating face normals
-2019-03-21 20:55:06,698 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:06,699 - DEBUG - triangles_cross was not in cache, executed in 0.001000
-2019-03-21 20:55:06,700 - DEBUG - vertex_normals was not in cache, executed in 0.002999
-2019-03-21 20:55:06,705 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:06,706 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:06,706 - DEBUG - generating face normals
-2019-03-21 20:55:06,707 - DEBUG - triangles was not in cache, executed in 0.000999
-2019-03-21 20:55:06,707 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:06,708 - DEBUG - vertex_normals was not in cache, executed in 0.001999
-2019-03-21 20:55:06,716 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:06,717 - DEBUG - faces_sparse was not in cache, executed in 0.000999
-2019-03-21 20:55:06,717 - DEBUG - generating face normals
-2019-03-21 20:55:06,717 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:06,718 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:06,719 - DEBUG - vertex_normals was not in cache, executed in 0.003000
-2019-03-21 20:55:06,724 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:06,725 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:06,726 - DEBUG - generating face normals
-2019-03-21 20:55:06,727 - DEBUG - triangles was not in cache, executed in 0.001000
-2019-03-21 20:55:06,728 - DEBUG - triangles_cross was not in cache, executed in 0.001000
-2019-03-21 20:55:06,729 - DEBUG - vertex_normals was not in cache, executed in 0.004000
-2019-03-21 20:55:06,734 - DEBUG - apply_tranform passed identity matrix
-2019-03-21 20:55:06,738 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:06,739 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:06,739 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:06,740 - DEBUG - mass_properties was not in cache, executed in 0.001000
-2019-03-21 20:55:06,740 - DEBUG - 3 items cleared from cache: ['triangles', 'triangles_cross', 'mass_properties']
-2019-03-21 20:55:06,742 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:06,743 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:06,744 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:06,744 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:06,745 - DEBUG - mass_properties was not in cache, executed in 0.000999
-2019-03-21 20:55:06,745 - DEBUG - 3 items cleared from cache: ['triangles', 'triangles_cross', 'mass_properties']
-2019-03-21 20:55:06,747 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:06,748 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:06,749 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:06,750 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:06,750 - DEBUG - mass_properties was not in cache, executed in 0.000999
-2019-03-21 20:55:06,751 - DEBUG - 3 items cleared from cache: ['triangles', 'triangles_cross', 'mass_properties']
-2019-03-21 20:55:06,753 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:06,755 - DEBUG - generating face normals
-2019-03-21 20:55:06,755 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:06,756 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:10,487 - DEBUG - findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('D:\\ProgramData\\Miniconda3\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000
-2019-03-21 20:55:31,441 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,441 - DEBUG - generating face normals
-2019-03-21 20:55:31,441 - DEBUG - vertex_normals was not in cache, executed in 0.001000
-2019-03-21 20:55:31,446 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,447 - DEBUG - faces_sparse was not in cache, executed in 0.001000
-2019-03-21 20:55:31,447 - DEBUG - generating face normals
-2019-03-21 20:55:31,447 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,448 - DEBUG - triangles_cross was not in cache, executed in 0.000999
-2019-03-21 20:55:31,449 - DEBUG - vertex_normals was not in cache, executed in 0.002999
-2019-03-21 20:55:31,454 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,456 - DEBUG - faces_sparse was not in cache, executed in 0.000998
-2019-03-21 20:55:31,457 - DEBUG - generating face normals
-2019-03-21 20:55:31,458 - DEBUG - triangles was not in cache, executed in 0.001000
-2019-03-21 20:55:31,460 - DEBUG - triangles_cross was not in cache, executed in 0.000999
-2019-03-21 20:55:31,461 - DEBUG - vertex_normals was not in cache, executed in 0.005995
-2019-03-21 20:55:31,483 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,484 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,485 - DEBUG - generating face normals
-2019-03-21 20:55:31,485 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,486 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:31,487 - DEBUG - vertex_normals was not in cache, executed in 0.002997
-2019-03-21 20:55:31,492 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,493 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,494 - DEBUG - generating face normals
-2019-03-21 20:55:31,495 - DEBUG - triangles was not in cache, executed in 0.001000
-2019-03-21 20:55:31,496 - DEBUG - triangles_cross was not in cache, executed in 0.000999
-2019-03-21 20:55:31,498 - DEBUG - vertex_normals was not in cache, executed in 0.004998
-2019-03-21 20:55:31,506 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,507 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,508 - DEBUG - generating face normals
-2019-03-21 20:55:31,508 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,509 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:31,511 - DEBUG - vertex_normals was not in cache, executed in 0.003998
-2019-03-21 20:55:31,521 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,522 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,522 - DEBUG - generating face normals
-2019-03-21 20:55:31,524 - DEBUG - triangles was not in cache, executed in 0.000999
-2019-03-21 20:55:31,526 - DEBUG - triangles_cross was not in cache, executed in 0.001998
-2019-03-21 20:55:31,527 - DEBUG - vertex_normals was not in cache, executed in 0.004998
-2019-03-21 20:55:31,536 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,537 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,538 - DEBUG - generating face normals
-2019-03-21 20:55:31,539 - DEBUG - triangles was not in cache, executed in 0.000999
-2019-03-21 20:55:31,540 - DEBUG - triangles_cross was not in cache, executed in 0.001000
-2019-03-21 20:55:31,541 - DEBUG - vertex_normals was not in cache, executed in 0.003998
-2019-03-21 20:55:31,546 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,548 - DEBUG - faces_sparse was not in cache, executed in 0.001000
-2019-03-21 20:55:31,549 - DEBUG - generating face normals
-2019-03-21 20:55:31,549 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,551 - DEBUG - triangles_cross was not in cache, executed in 0.001512
-2019-03-21 20:55:31,554 - DEBUG - vertex_normals was not in cache, executed in 0.006484
-2019-03-21 20:55:31,562 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,563 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,563 - DEBUG - generating face normals
-2019-03-21 20:55:31,564 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,565 - DEBUG - triangles_cross was not in cache, executed in 0.001000
-2019-03-21 20:55:31,567 - DEBUG - vertex_normals was not in cache, executed in 0.003993
-2019-03-21 20:55:31,571 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,572 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,573 - DEBUG - generating face normals
-2019-03-21 20:55:31,573 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,574 - DEBUG - triangles_cross was not in cache, executed in 0.001001
-2019-03-21 20:55:31,575 - DEBUG - vertex_normals was not in cache, executed in 0.002997
-2019-03-21 20:55:31,580 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,581 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,582 - DEBUG - generating face normals
-2019-03-21 20:55:31,582 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,583 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:31,583 - DEBUG - vertex_normals was not in cache, executed in 0.001999
-2019-03-21 20:55:31,587 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,588 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,589 - DEBUG - generating face normals
-2019-03-21 20:55:31,589 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,590 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:31,590 - DEBUG - vertex_normals was not in cache, executed in 0.001998
-2019-03-21 20:55:31,595 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,596 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,596 - DEBUG - generating face normals
-2019-03-21 20:55:31,597 - DEBUG - triangles was not in cache, executed in 0.000999
-2019-03-21 20:55:31,597 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:31,598 - DEBUG - vertex_normals was not in cache, executed in 0.001999
-2019-03-21 20:55:31,602 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,603 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,603 - DEBUG - generating face normals
-2019-03-21 20:55:31,604 - DEBUG - triangles was not in cache, executed in 0.000999
-2019-03-21 20:55:31,604 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:31,605 - DEBUG - vertex_normals was not in cache, executed in 0.001998
-2019-03-21 20:55:31,609 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,610 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,611 - DEBUG - generating face normals
-2019-03-21 20:55:31,611 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,612 - DEBUG - triangles_cross was not in cache, executed in 0.000999
-2019-03-21 20:55:31,613 - DEBUG - vertex_normals was not in cache, executed in 0.002999
-2019-03-21 20:55:31,616 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,617 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,618 - DEBUG - generating face normals
-2019-03-21 20:55:31,618 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,619 - DEBUG - triangles_cross was not in cache, executed in 0.001000
-2019-03-21 20:55:31,620 - DEBUG - vertex_normals was not in cache, executed in 0.002998
-2019-03-21 20:55:31,624 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,625 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,625 - DEBUG - generating face normals
-2019-03-21 20:55:31,626 - DEBUG - triangles was not in cache, executed in 0.000999
-2019-03-21 20:55:31,626 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:31,627 - DEBUG - vertex_normals was not in cache, executed in 0.001997
-2019-03-21 20:55:31,631 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,632 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,632 - DEBUG - generating face normals
-2019-03-21 20:55:31,633 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,633 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:31,634 - DEBUG - vertex_normals was not in cache, executed in 0.001998
-2019-03-21 20:55:31,639 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,640 - DEBUG - faces_sparse was not in cache, executed in 0.001000
-2019-03-21 20:55:31,640 - DEBUG - generating face normals
-2019-03-21 20:55:31,641 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,641 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:31,642 - DEBUG - vertex_normals was not in cache, executed in 0.002998
-2019-03-21 20:55:31,648 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,649 - DEBUG - faces_sparse was not in cache, executed in 0.001000
-2019-03-21 20:55:31,649 - DEBUG - generating face normals
-2019-03-21 20:55:31,650 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,650 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:31,651 - DEBUG - vertex_normals was not in cache, executed in 0.002999
-2019-03-21 20:55:31,656 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,657 - DEBUG - faces_sparse was not in cache, executed in 0.001000
-2019-03-21 20:55:31,657 - DEBUG - generating face normals
-2019-03-21 20:55:31,658 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,659 - DEBUG - triangles_cross was not in cache, executed in 0.001000
-2019-03-21 20:55:31,660 - DEBUG - vertex_normals was not in cache, executed in 0.003998
-2019-03-21 20:55:31,664 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,664 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,665 - DEBUG - generating face normals
-2019-03-21 20:55:31,665 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,666 - DEBUG - triangles_cross was not in cache, executed in 0.000999
-2019-03-21 20:55:31,666 - DEBUG - vertex_normals was not in cache, executed in 0.001999
-2019-03-21 20:55:31,671 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,672 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,672 - DEBUG - generating face normals
-2019-03-21 20:55:31,673 - DEBUG - triangles was not in cache, executed in 0.000999
-2019-03-21 20:55:31,673 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:31,674 - DEBUG - vertex_normals was not in cache, executed in 0.002000
-2019-03-21 20:55:31,678 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,679 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,679 - DEBUG - generating face normals
-2019-03-21 20:55:31,680 - DEBUG - triangles was not in cache, executed in 0.000999
-2019-03-21 20:55:31,680 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:31,681 - DEBUG - vertex_normals was not in cache, executed in 0.001999
-2019-03-21 20:55:31,685 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,686 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,687 - DEBUG - generating face normals
-2019-03-21 20:55:31,687 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,687 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:31,688 - DEBUG - vertex_normals was not in cache, executed in 0.001998
-2019-03-21 20:55:31,692 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,693 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,693 - DEBUG - generating face normals
-2019-03-21 20:55:31,694 - DEBUG - triangles was not in cache, executed in 0.000999
-2019-03-21 20:55:31,694 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:31,695 - DEBUG - vertex_normals was not in cache, executed in 0.001999
-2019-03-21 20:55:31,699 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,700 - DEBUG - faces_sparse was not in cache, executed in 0.000000
-2019-03-21 20:55:31,700 - DEBUG - generating face normals
-2019-03-21 20:55:31,701 - DEBUG - triangles was not in cache, executed in 0.000999
-2019-03-21 20:55:31,701 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:31,702 - DEBUG - vertex_normals was not in cache, executed in 0.001999
-2019-03-21 20:55:31,706 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,707 - DEBUG - faces_sparse was not in cache, executed in 0.000999
-2019-03-21 20:55:31,707 - DEBUG - generating face normals
-2019-03-21 20:55:31,707 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,708 - DEBUG - triangles_cross was not in cache, executed in 0.001000
-2019-03-21 20:55:31,709 - DEBUG - vertex_normals was not in cache, executed in 0.002999
-2019-03-21 20:55:31,713 - DEBUG - apply_tranform passed identity matrix
-2019-03-21 20:55:31,715 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:31,716 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,716 - DEBUG - triangles_cross was not in cache, executed in 0.000000
-2019-03-21 20:55:31,717 - DEBUG - mass_properties was not in cache, executed in 0.001000
-2019-03-21 20:55:31,717 - DEBUG - 3 items cleared from cache: ['triangles', 'triangles_cross', 'mass_properties']
-2019-03-21 20:55:31,718 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,721 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:31,722 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,723 - DEBUG - triangles_cross was not in cache, executed in 0.000999
-2019-03-21 20:55:31,723 - DEBUG - mass_properties was not in cache, executed in 0.000999
-2019-03-21 20:55:31,723 - DEBUG - 3 items cleared from cache: ['triangles', 'triangles_cross', 'mass_properties']
-2019-03-21 20:55:31,725 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,726 - DEBUG - is_empty was not in cache, executed in 0.000000
-2019-03-21 20:55:31,727 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,728 - DEBUG - triangles_cross was not in cache, executed in 0.000999
-2019-03-21 20:55:31,728 - DEBUG - mass_properties was not in cache, executed in 0.000999
-2019-03-21 20:55:31,729 - DEBUG - 3 items cleared from cache: ['triangles', 'triangles_cross', 'mass_properties']
-2019-03-21 20:55:31,730 - DEBUG - mesh transformed by matrix
-2019-03-21 20:55:31,731 - DEBUG - generating face normals
-2019-03-21 20:55:31,732 - DEBUG - triangles was not in cache, executed in 0.000000
-2019-03-21 20:55:31,732 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-22 21:52:23,178 - DEBUG - loaded mesh using load_wavefront
+2019-03-22 21:52:23,179 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-03-22 21:52:23,182 - DEBUG - triangles was not in cache, executed in 0.000987
+2019-03-22 21:52:23,182 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-22 21:52:23,182 - DEBUG - area_faces was not in cache, executed in 0.000000
+2019-03-22 21:52:23,183 - DEBUG - load_mesh executed in 0.0190 seconds.
+2019-03-22 21:52:23,310 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-03-22 21:52:23,311 - DEBUG - edges was not in cache, executed in 0.000000
+2019-03-22 21:52:23,311 - DEBUG - edges_sorted was not in cache, executed in 0.000000
+2019-03-22 21:52:23,312 - DEBUG - is_watertight was not in cache, executed in 0.002012
+2019-03-22 21:52:23,312 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-22 21:52:23,312 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-22 21:52:23,314 - DEBUG - mass_properties was not in cache, executed in 0.001987
+2019-03-22 21:52:23,320 - DEBUG - loaded mesh using load_wavefront
+2019-03-22 21:52:23,320 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-03-22 21:52:23,321 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-22 21:52:23,322 - DEBUG - triangles_cross was not in cache, executed in 0.000999
+2019-03-22 21:52:23,322 - DEBUG - area_faces was not in cache, executed in 0.000999
+2019-03-22 21:52:23,322 - DEBUG - load_mesh executed in 0.0080 seconds.
+2019-03-22 21:52:23,324 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-03-22 21:52:23,324 - DEBUG - edges was not in cache, executed in 0.000000
+2019-03-22 21:52:23,325 - DEBUG - edges_sorted was not in cache, executed in 0.000000
+2019-03-22 21:52:23,325 - DEBUG - is_watertight was not in cache, executed in 0.000998
+2019-03-22 21:52:23,325 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-22 21:52:23,326 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-22 21:52:23,327 - DEBUG - mass_properties was not in cache, executed in 0.002012
+2019-03-22 21:52:23,336 - DEBUG - 4 items cleared from cache: ['triangles_cross', 'triangles_center', 'area_faces', 'centroid']
+2019-03-22 21:52:23,336 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-03-22 21:52:23,337 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-03-22 21:52:23,337 - DEBUG - edges was not in cache, executed in 0.000000
+2019-03-22 21:52:23,338 - DEBUG - edges_sorted was not in cache, executed in 0.000000
+2019-03-22 21:52:23,338 - DEBUG - is_watertight was not in cache, executed in 0.001002
+2019-03-22 21:52:23,338 - DEBUG - is_winding_consistent was not in cache, executed in 0.001002
+2019-03-22 21:52:23,338 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-22 21:52:23,339 - DEBUG - triangles_cross was not in cache, executed in 0.000998
+2019-03-22 21:52:23,339 - DEBUG - mass_properties was not in cache, executed in 0.000998
+2019-03-22 21:52:23,339 - DEBUG - fix_normals executed in 0.0020 seconds.
+2019-03-22 21:52:23,339 - DEBUG - convex_hull was not in cache, executed in 0.011995
+2019-03-22 21:52:23,346 - DEBUG - 4 items cleared from cache: ['triangles_cross', 'triangles_center', 'area_faces', 'centroid']
+2019-03-22 21:52:23,346 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-03-22 21:52:23,347 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-03-22 21:52:23,347 - DEBUG - edges was not in cache, executed in 0.000000
+2019-03-22 21:52:23,347 - DEBUG - edges_sorted was not in cache, executed in 0.000000
+2019-03-22 21:52:23,347 - DEBUG - is_watertight was not in cache, executed in 0.000000
+2019-03-22 21:52:23,348 - DEBUG - is_winding_consistent was not in cache, executed in 0.001013
+2019-03-22 21:52:23,348 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-22 21:52:23,348 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-03-22 21:52:23,349 - DEBUG - mass_properties was not in cache, executed in 0.000999
+2019-03-22 21:52:23,349 - DEBUG - fix_normals executed in 0.0020 seconds.
+2019-03-22 21:52:23,349 - DEBUG - convex_hull was not in cache, executed in 0.008997
+2019-03-22 21:52:23,350 - DEBUG - triangles_center was not in cache, executed in 0.000000
+2019-03-22 21:52:23,351 - DEBUG - face_adjacency was not in cache, executed in 0.001001
+2019-03-22 21:52:23,406 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-03-22 21:52:23,408 - DEBUG - mesh transformed by matrix
+2019-03-22 21:52:23,409 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-22 21:52:23,409 - DEBUG - bounds was not in cache, executed in 0.000998
+2019-03-22 21:52:23,409 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-03-22 21:52:23,411 - DEBUG - mesh transformed by matrix
+2019-03-22 21:52:23,411 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-22 21:52:23,411 - DEBUG - bounds was not in cache, executed in 0.000000
+2019-03-22 21:52:23,412 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-03-22 21:52:23,413 - DEBUG - mesh transformed by matrix
+2019-03-22 21:52:23,414 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-22 21:52:23,414 - DEBUG - bounds was not in cache, executed in 0.000999
+2019-03-22 21:52:23,414 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-03-22 21:52:23,416 - DEBUG - mesh transformed by matrix
+2019-03-22 21:52:23,416 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-22 21:52:23,416 - DEBUG - bounds was not in cache, executed in 0.000000
+2019-03-22 21:52:23,417 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-03-22 21:52:23,418 - DEBUG - mesh transformed by matrix
+2019-03-22 21:52:23,419 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-22 21:52:23,419 - DEBUG - bounds was not in cache, executed in 0.000999
+2019-03-22 21:52:23,419 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-03-22 21:52:23,421 - DEBUG - mesh transformed by matrix
+2019-03-22 21:52:23,421 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-03-22 21:52:23,421 - DEBUG - bounds was not in cache, executed in 0.000000
+2019-03-22 21:52:23,422 - DEBUG - area_faces was not in cache, executed in 0.001012
+2019-03-22 21:52:23,422 - DEBUG - generating face normals
+2019-03-22 21:52:23,436 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,439 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
+2019-03-22 21:52:23,440 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,443 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,446 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
+2019-03-22 21:52:23,447 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,450 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,452 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,455 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
+2019-03-22 21:52:23,456 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,460 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,462 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,463 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,465 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,466 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,469 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,472 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,473 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,476 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,479 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,481 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,482 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,484 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,485 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
+2019-03-22 21:52:23,486 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,488 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,489 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
+2019-03-22 21:52:23,490 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
+2019-03-22 21:52:23,492 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
+2019-03-22 21:52:23,492 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,495 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,496 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
+2019-03-22 21:52:23,497 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,499 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,500 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,502 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,503 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,505 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,506 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
+2019-03-22 21:52:23,507 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
+2019-03-22 21:52:23,509 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,511 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,512 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,515 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,517 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,518 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,520 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,522 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,525 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,528 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
+2019-03-22 21:52:23,529 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,532 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,534 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,535 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,537 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,539 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,541 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,542 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,546 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,548 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,549 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,552 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,554 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,555 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,557 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,558 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,560 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,561 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,565 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,568 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,571 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,574 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,576 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,578 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,581 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,584 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,586 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,587 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,589 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,590 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,593 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,596 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,597 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,599 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,600 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,602 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,603 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,606 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,608 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,610 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,612 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,615 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,618 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
+2019-03-22 21:52:23,619 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,622 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,623 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,625 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,626 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,628 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,629 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,631 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,632 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,635 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,636 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,639 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,642 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,643 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,645 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,646 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,648 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,649 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,651 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,652 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,655 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,656 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,658 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,659 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,662 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,665 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,668 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,670 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,671 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
+2019-03-22 21:52:23,672 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,675 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,678 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
+2019-03-22 21:52:23,679 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,683 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,686 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,690 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,693 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,695 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,696 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,698 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,700 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,702 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,702 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,704 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,706 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,708 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
+2019-03-22 21:52:23,710 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,712 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,713 - DEBUG - _find_grasp 成功生成1个抓取，物体:bar_clamp 
+2019-03-22 21:52:23,715 - INFO - sample_grasps 成功生成一个抓取
+2019-03-22 21:52:23,716 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
+2019-03-22 21:52:23,717 - DEBUG - _find_grasp 抓取生成失败，物体:bar_clamp 
+2019-03-22 21:52:24,197 - DEBUG - faces_sparse was not in cache, executed in 0.000982
+2019-03-22 21:52:24,197 - DEBUG - vertex_normals was not in cache, executed in 0.000982
+2019-03-22 21:52:24,947 - DEBUG - findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('D:\\ProgramData\\Miniconda3\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000

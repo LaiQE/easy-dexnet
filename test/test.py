@@ -113,20 +113,26 @@ def test_render():
             g.get_approch(pose)[1] < 40:
             vaild_grasps.append(g)
     
-    vaild_grasps_T = [g.apply_transform(pose.matrix) for g in vaild_grasps]
-    mesh_T = mesh.apply_transform(pose.matrix)
+    # vaild_grasps_T = [g.apply_transform(pose.matrix) for g in vaild_grasps]
+    # mesh_T = mesh.apply_transform(pose.matrix)
     # display(mesh_T, vaild_grasps_T)
     
     render = dex.ImageRender(mesh, pose, table, config)
-    for g in vaild_grasps:
-        render.scene.add_grasp(g, render._obj_matrix)
-    pyrender.Viewer(render.scene, use_raymond_lighting=True)
+    # for g in vaild_grasps:
+    #     render.scene.add_grasp(g, render._obj_matrix)
+    # pyrender.Viewer(render.scene, use_raymond_lighting=True)
     rgb, depth = render.data
-    plt.imshow(rgb)
+    # plt.imshow(rgb)
+    # for g in vaild_grasps:
+    #     plot_2p(*render.render_grasp(g).endpoints)
+    # plt.show()
+    # display(mesh_T, vaild_grasps_T)
     for g in vaild_grasps:
-        plot_2p(*render.render_grasp(g).endpoints)
-    plt.show()
-    display(mesh_T, vaild_grasps_T)
+        g_2d = render.render_grasp(g)
+        out = dex.DataGenerator(rgb, g_2d, config).output
+        plt.imshow(out)
+        plot_2p([9,16], [23,16])
+        plt.show()
 
     # plt.figure()
     # plt.subplot(1,2,1)
