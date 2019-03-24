@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 import logging
+import os.path
 import numpy as np
 from .mesh import BaseMesh
 from .stable_poses import StablePoses
@@ -53,6 +54,8 @@ class DexObject(object):
 
     @staticmethod
     def from_file(file_path, config, name=None):
+        if not name:
+            name = os.path.splitext(os.path.basename(file_path))[0]
         mesh = BaseMesh.from_file(file_path, name)
         return DexObject(mesh, config, name=name)
 
@@ -97,7 +100,7 @@ class DexObject(object):
         grasps, metrics = DexObject.grasps_from_hdf5(obj_group, config)
         mesh = DexObject.mesh_from_hdf5(obj_group, name)
         poses = DexObject.poses_from_hdf5(obj_group, config)
-        return DexObject(mesh, config, poses, grasps, metrics)
+        return DexObject(mesh, config, poses, grasps, metrics, name)
 
     @staticmethod
     def grasps_from_hdf5(obj_group, config):
@@ -128,15 +131,50 @@ class DexObject(object):
         for pose_name, pose in group.items():
             p = pose.attrs['p']
             r = pose.attrs['r']
-            # x0 = pose.attrs['x0']
-            v = r.dot(vertices.T)
-            min_z = np.min(v[2,:])
-            # 这里的x0什么作用还要试一下
-            matrix = np.eye(4)
-            matrix[:3, :3] = r
-            matrix[2, 3] = -min_z
+            if r.shape[0] == 3:
+                v = r.dot(vertices.T)
+                min_z = np.min(v[2, :])
+                matrix = np.eye(4)
+                matrix[:3, :3] = r
+                matrix[2, 3] = -min_z
+            else:
+                matrix = r
             poses.append(StablePoses(matrix, p))
         return poses
-    
-    def to_hdf5_group(self, parameter_list):
-        pass
+
+    def to_hdf5_group(self, obj_group, config):
+        if self._name in list(obj_group.keys()):
+            del obj_group[self._name]
+        group = obj_group.require_group(self._name)
+        self.grasps_to_hdf5(group, config)
+        self.mesh_to_hdf5(group)
+        self.poses_to_hdf5(group, config)
+
+    def grasps_to_hdf5(self, obj_group, config):
+        group_name = config['hdf5_config']['grasps_group']
+        metrics_name = config['hdf5_config']['metrics_name']
+        group = obj_group.require_group(group_name)
+        for i in range(len(self._grasps)):
+            configuration = self._grasps[i].to_configuration()
+            metrics = self._qualitis[i]
+            grasp_name = 'grasp_%d' % (i)
+            grasp_group = group.require_group(grasp_name)
+            grasp_group.attrs['configuration'] = configuration
+            metrics_group = grasp_group.require_group('metrics')
+            metrics_group.attrs[metrics_name] = metrics
+
+    def mesh_to_hdf5(self, obj_group):
+        triangles = self._mesh.tri_mesh.faces
+        vertices = self._mesh.tri_mesh.vertices
+        group = obj_group.require_group('mesh')
+        group.create_dataset('triangles', data=triangles)
+        group.create_dataset('vertices', data=vertices)
+
+    def poses_to_hdf5(self, obj_group, config):
+        group_name = config['hdf5_config']['stable_poses_group']
+        group = obj_group.require_group(group_name)
+        for i, pose in enumerate(self._poses):
+            pose_name = 'pose_%d' % (i)
+            pose_group = group.require_group(pose_name)
+            pose_group.attrs['r'] = pose.matrix
+            pose_group.attrs['p'] = pose.probability

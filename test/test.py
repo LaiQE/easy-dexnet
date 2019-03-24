@@ -163,8 +163,18 @@ def test_dataset():
         pyrender.Viewer(render.scene, use_raymond_lighting=True)
         mesh = dex_obj.mesh.apply_transform(pose.matrix)
         print(mesh.bounding_box())
+    f.close()
+
+def test_to_hdf5():
+    config_logging(TEST_LOG_FILE)
+    config = load_config(TEST_CFG_FILE)
+
+    f = h5py.File(r'H:\test.hdf5', 'a')
+    dex_obj = dex.DexObject.from_file(TEST_OBJ_FILE, config)
+    dex_obj.to_hdf5_group(f, config)
+    f.close()
 
 if __name__ == "__main__":
     
     # print()
-    test_dataset()
+    test_to_hdf5()

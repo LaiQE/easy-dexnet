@@ -175,3 +175,13 @@ class Grasp_2f(object):
         axis = configuration[3:6]
         width = configuration[6]
         return Grasp_2f(center, axis, width, min_grasp_width, config)
+    
+    def to_configuration(self):
+        configuration = np.zeros(10)
+        configuration[0:3] = self._center
+        configuration[3:6] = self._axis
+        configuration[6] = self._max_grasp_width
+        configuration[7] = 0
+        configuration[8] = 0
+        configuration[9] = self._min_grasp_width
+        return configuration
