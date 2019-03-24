@@ -3,6 +3,7 @@ import os.path
 import logging
 import trimesh
 import pyrender
+import h5py
 import numpy as np
 import matplotlib.pyplot as plt
 from ruamel.yaml import YAML
@@ -11,7 +12,7 @@ sys.path.append(os.path.abspath(os.path.join(ROOT_PATH, 'src')))
 try:
     import easydexnet as dex
 except Exception as e:
-    pass
+    print('导入模块失败', e)
 
 # 测试一下github的同步功能，这段文字来自于ubuntu
 
@@ -20,6 +21,8 @@ TEST_OBJ_FILE = os.path.join(ROOT_PATH, r'data/bar_clamp.obj')
 TEST_LOG_FILE = os.path.join(ROOT_PATH, 'test/test.log')
 TEST_CFG_FILE = os.path.join(ROOT_PATH, 'config/test.yaml')
 TEST_TABLE_FILE = os.path.join(ROOT_PATH, r'data/table.obj')
+HDF5_FILE = r'H:/Robot/Dex-Net/dataSet/example.hdf5'
+OBJ_GROUP = 'datasets/mini_dexnet/objects/bar_clamp'
 
 
 def config_logging(file=None, level=logging.DEBUG):
@@ -144,8 +147,24 @@ def test_render():
     # plt.imshow(depth)
     # plt.colorbar()
     # plt.show()
-    
+
+def test_dataset():
+    config_logging(TEST_LOG_FILE)
+    config = load_config(TEST_CFG_FILE)
+    table = dex.BaseMesh.from_file(TEST_TABLE_FILE)
+
+    f = h5py.File(HDF5_FILE)
+    obj_group = f[OBJ_GROUP]
+    obj_name = OBJ_GROUP.split('/')[-1]
+    dex_obj = dex.DexObject.from_hdf5_group(obj_group, config, obj_name)
+    # display(dex_obj.mesh, dex_obj.grasps[:25])
+    for pose in dex_obj.poses:
+        render = dex.ImageRender(dex_obj.mesh, pose, table, config)
+        pyrender.Viewer(render.scene, use_raymond_lighting=True)
+        mesh = dex_obj.mesh.apply_transform(pose.matrix)
+        print(mesh.bounding_box())
+
 if __name__ == "__main__":
     
     # print()
-    test_render()
+    test_dataset()

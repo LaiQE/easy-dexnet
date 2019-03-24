@@ -96,6 +96,12 @@ gqcnn:
   final_width: 32
   final_height: 32
 
+hdf5_config:
+  grasps_group: grasps/yumi_metal_spline
+  stable_poses_group: stable_poses
+  metrics_name: robust_ferrari_canny
+
+
 
 
   

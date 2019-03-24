@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 import logging
+import numpy as np
 from .mesh import BaseMesh
 from .stable_poses import StablePoses
 from .grasp_sampler import GraspSampler_2f
 from .quality import grasp_quality
+from .grasp import Grasp_2f
 
 
 class DexObject(object):
@@ -12,16 +14,21 @@ class DexObject(object):
         所需的所有数据，包括，网格数据、所有稳定姿态、所有候选抓取点
     """
 
-    def __init__(self, mesh, config, poses=None, grasps=None):
+    def __init__(self, mesh, config, poses=None, grasps=None, qualitis=None, name=None):
         self._mesh = mesh
         self._config = config
+        self._poses = poses
+        self._grasps = grasps
+        self._qualitis = qualitis
+        self._name = name
         if not poses:
             self._poses = self.get_poses(
                 self._mesh, config['stable_pose_min_p'])
         if not grasps:
             self._grasps = self.get_grasps(self._mesh, self._config)
-        self._qualitis, self._grasps = self.get_quality(
-            self._grasps, self._mesh, self._config)
+        if not qualitis:
+            self._qualitis, self._grasps = self.get_quality(
+                self._grasps, self._mesh, self._config)
 
     @property
     def mesh(self):
@@ -43,11 +50,11 @@ class DexObject(object):
     def from_trimesh(tri_mesh, config, name=None):
         mesh = BaseMesh(tri_mesh, name)
         return DexObject(mesh, config)
-    
+
     @staticmethod
     def from_file(file_path, config, name=None):
         mesh = BaseMesh.from_file(file_path, name)
-        return DexObject(mesh, config)
+        return DexObject(mesh, config, name=name)
 
     @staticmethod
     def get_poses(mesh, threshold):
@@ -84,3 +91,52 @@ class DexObject(object):
                 qualitis.append(quality)
                 valid_grasps.append(grasp)
         return qualitis, valid_grasps
+
+    @staticmethod
+    def from_hdf5_group(obj_group, config, name=None):
+        grasps, metrics = DexObject.grasps_from_hdf5(obj_group, config)
+        mesh = DexObject.mesh_from_hdf5(obj_group, name)
+        poses = DexObject.poses_from_hdf5(obj_group, config)
+        return DexObject(mesh, config, poses, grasps, metrics)
+
+    @staticmethod
+    def grasps_from_hdf5(obj_group, config):
+        group = obj_group[config['hdf5_config']['grasps_group']]
+        metrics_name = config['hdf5_config']['metrics_name']
+        grasps = []
+        metrics = []
+        for grasp_name, grasp_group in group.items():
+            configuration = grasp_group.attrs['configuration']
+            g = Grasp_2f.from_configuration(configuration, config)
+            grasps.append(g)
+            m = grasp_group['metrics'].attrs[metrics_name]
+            metrics.append(m)
+        return grasps, metrics
+
+    @staticmethod
+    def mesh_from_hdf5(obj_group, name):
+        triangles = np.array(obj_group['mesh/triangles'])
+        vertices = np.array(obj_group['mesh/vertices'])
+        mesh = BaseMesh.from_data(vertices, triangles, name=name)
+        return mesh
+
+    @staticmethod
+    def poses_from_hdf5(obj_group, config):
+        group = obj_group[config['hdf5_config']['stable_poses_group']]
+        vertices = np.array(obj_group['mesh/vertices'])
+        poses = []
+        for pose_name, pose in group.items():
+            p = pose.attrs['p']
+            r = pose.attrs['r']
+            # x0 = pose.attrs['x0']
+            v = r.dot(vertices.T)
+            min_z = np.min(v[2,:])
+            # 这里的x0什么作用还要试一下
+            matrix = np.eye(4)
+            matrix[:3, :3] = r
+            matrix[2, 3] = -min_z
+            poses.append(StablePoses(matrix, p))
+        return poses
+    
+    def to_hdf5_group(self, parameter_list):
+        pass

@@ -29,7 +29,7 @@ class BaseMesh(object):
     @property
     def tri_mesh(self):
         return self._trimesh_obj
-    
+
     @property
     def center_mass(self):
         return self._center_mass
@@ -71,20 +71,28 @@ class BaseMesh(object):
             trimesh_obj._validate = True
             trimesh_obj.process()
         return trimesh_obj
-    
+
     def bounding_box(self):
         max_coords = np.max(self._trimesh_obj.vertices, axis=0)
         min_coords = np.min(self._trimesh_obj.vertices, axis=0)
         return min_coords, max_coords
-    
+
     def apply_transform(self, matrix):
         tri = self._trimesh_obj.copy()
         tri = tri.apply_transform(matrix)
         return BaseMesh(tri, self._name)
-    
+
     @staticmethod
     def from_file(file_path, name=None):
         if name is None:
-            name = os.path.splitext(os.path.basename(file_path))[0] 
+            name = os.path.splitext(os.path.basename(file_path))[0]
         tri_mesh = trimesh.load_mesh(file_path, validate=True)
         return BaseMesh(tri_mesh, name)
+
+    @staticmethod
+    def from_data(vertices, triangles, normals=None, name=None):
+        trimesh_obj = trimesh.Trimesh(vertices=vertices,
+                                      faces=triangles,
+                                      face_normals=normals,
+                                      validate=True)
+        return BaseMesh(trimesh_obj, name)

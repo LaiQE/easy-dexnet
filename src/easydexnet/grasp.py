@@ -21,7 +21,7 @@ class Grasp_2f(object):
         if width is None and config is not None:
             self._max_grasp_width = config['grispper']['max_width']
         self._min_grasp_width = min_width
-        if width is None and config is not None:
+        if min_width is None and config is not None:
             self._min_grasp_width = config['grispper']['min_width']
         self._alpha = 0.05
         if config is not None:
@@ -160,3 +160,18 @@ class Grasp_2f(object):
         center = matrix.dot(center)[:3]
         axis = matrix[:3, :3].dot(self._axis)
         return Grasp_2f(center, axis, config=self._config)
+    
+    @staticmethod
+    def from_configuration(configuration, config):
+        if not isinstance(configuration, np.ndarray) or (configuration.shape[0] != 9 and configuration.shape[0] != 10):
+            raise ValueError('Configuration must be numpy ndarray of size 9 or 10')
+        if configuration.shape[0] == 9:
+            min_grasp_width = 0
+        else:
+            min_grasp_width = configuration[9]
+        if np.abs(np.linalg.norm(configuration[3:6]) - 1.0) > 1e-5:
+            raise ValueError('Illegal grasp axis. Must be norm one')
+        center = configuration[0:3]
+        axis = configuration[3:6]
+        width = configuration[6]
+        return Grasp_2f(center, axis, width, min_grasp_width, config)
