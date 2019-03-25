@@ -12,7 +12,7 @@ requirements = [
 ]
 
 setup(name='easy-dexnet',                       
-      version='0.0.1',                         
+      version='0.1.0',                         
       description='easy-dexnet project',
       author='LaiQE',
       author_email='1311127080@qq.com',

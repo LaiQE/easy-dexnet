@@ -1,0 +1,3 @@
+trimesh
+pyrender
+opencv-python
