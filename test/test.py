@@ -8,7 +8,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from ruamel.yaml import YAML
 ROOT_PATH = r'H:\Robot\easy-dexnet'
-sys.path.append(os.path.abspath(os.path.join(ROOT_PATH, 'src')))
+dex_path = os.path.abspath(os.path.join(ROOT_PATH, 'src'))
+# sys.path.append(dex_path)
+sys.path = [dex_path]+sys.path
 try:
     import easydexnet as dex
 except Exception as e:
@@ -157,12 +159,15 @@ def test_dataset():
     obj_group = f[OBJ_GROUP]
     obj_name = OBJ_GROUP.split('/')[-1]
     dex_obj = dex.DexObject.from_hdf5_group(obj_group, config, obj_name)
-    # display(dex_obj.mesh, dex_obj.grasps[:25])
-    for pose in dex_obj.poses:
-        render = dex.ImageRender(dex_obj.mesh, pose, table, config)
-        pyrender.Viewer(render.scene, use_raymond_lighting=True)
-        mesh = dex_obj.mesh.apply_transform(pose.matrix)
-        print(mesh.bounding_box())
+    ff = h5py.File(r'H:\test.hdf5', 'a')
+    dex_obj.to_hdf5_group(ff, config)
+    # # display(dex_obj.mesh, dex_obj.grasps[:25])
+    # for pose in dex_obj.poses:
+    #     render = dex.ImageRender(dex_obj.mesh, pose, table, config)
+    #     pyrender.Viewer(render.scene, use_raymond_lighting=True)
+    #     mesh = dex_obj.mesh.apply_transform(pose.matrix)
+    #     print(mesh.bounding_box())
+    ff.close()
     f.close()
 
 def test_to_hdf5():
@@ -175,6 +180,4 @@ def test_to_hdf5():
     f.close()
 
 if __name__ == "__main__":
-    
-    # print()
-    test_to_hdf5()
+    test_dataset()

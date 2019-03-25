@@ -26,6 +26,15 @@ class Grasp_2f(object):
         self._alpha = 0.05
         if config is not None:
             self._alpha = config['grisp_distance_alpha']
+        self._quality = None
+    
+    @property
+    def quality(self):
+        return self._quality
+    
+    @quality.setter
+    def quality(self, q):
+        self._quality = q
 
     @property
     def center(self):
@@ -90,13 +99,13 @@ class Grasp_2f(object):
         points, _ = mesh.intersect_line(point0, point1)
         if ((points.shape[0] % 2) != 0) or points.shape[0] < 2:
             logging.debug('close_fingers 交点生成出错')
-            return False, None, None
+            return False, None
 
         is_c0, c0 = self._find_contact(mesh, point0, self._center)
         is_c1, c1 = self._find_contact(mesh, point1, self._center)
         if not (is_c0 and is_c1):
             logging.debug('close_fingers 接触点寻找失败'+str(is_c0)+str(is_c0))
-            return False, None, None
+            return False, None
         contacts = [c0, c1]
 
         return True, contacts
@@ -123,7 +132,7 @@ class Grasp_2f(object):
         approach_L = np.linalg.norm(approach)
         poses_z_L = np.linalg.norm(poses_z)
         angle = np.arccos(poses_z.dot(approach)/(approach_L*poses_z_L))
-        angle = angle * 180 / np.pi
+        angle = np.rad2deg(angle)
         approach = -approach / np.linalg.norm(approach)
         return approach, angle
 

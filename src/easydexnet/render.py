@@ -86,7 +86,11 @@ class ImageRender(object):
         if data is None:
             self._data = self.render_image()
         # 视口变换矩阵
-        self._viewport = self.get_viewport(self._size) 
+        self._viewport = self.get_viewport(self._size)
+
+    @property
+    def camera(self):
+        return self._camera
 
     @property
     def data(self):
@@ -95,16 +99,16 @@ class ImageRender(object):
     @property
     def depth(self):
         return self._data[1]
-    
+
     def get_viewport(self, size):
         """ 计算视口变换矩阵 """
         scale = np.array([[size[0]/2, 0, 0],
-                         [0, size[1]/2, 0],
-                         [0, 0, 1]])
-        map_m = np.array([[1, 0, 1],
-                          [0,-1, 1],
+                          [0, size[1]/2, 0],
                           [0, 0, 1]])
-        return scale.dot(map_m) 
+        map_m = np.array([[1, 0, 1],
+                          [0, -1, 1],
+                          [0, 0, 1]])
+        return scale.dot(map_m)
 
     def render_image(self):
         scene = RenderScene()
@@ -149,6 +153,7 @@ class ImageRender(object):
         v = np.r_[p0_in_image, p1_in_image, center_2d[-1]]
         return Grasp2D.from_feature_vec(v)
 
+
 class DataGenerator(object):
     """ 数据生成器，从图像中生成最终的训练样本
     1. 平移夹爪中心到图像中心
@@ -156,13 +161,14 @@ class DataGenerator(object):
     3. 裁剪到初步大小
     4. 缩放到最终大小
     注意: Dex-Net源码中这里夹爪宽度并没有与图像对齐,有待改进
-    """   
+    """
+
     def __init__(self, image, grasp_2d, config):
         self._image = image
         self._grasp = grasp_2d
         if "gqcnn" in config.keys():
             self._config = config["gqcnn"]
-    
+
     @property
     def output(self):
         grasp = self._grasp
@@ -170,7 +176,6 @@ class DataGenerator(object):
         out_size = [self._config['final_width'], self._config['final_height']]
         image = self.transform(self._image, grasp.center_float, grasp.angle)
         return self.crop_resize(image, crop_size, out_size)
-
 
     @staticmethod
     def transform(image, center, angle):
@@ -180,41 +185,73 @@ class DataGenerator(object):
         angle_ = np.rad2deg(angle)
         image_size = np.array(image.shape[:2][::-1]).astype(np.int)
         translation = image_size / 2 - center
-        trans_map = np.c_[np.eye(2),translation]
+        trans_map = np.c_[np.eye(2), translation]
         rot_map = cv2.getRotationMatrix2D(
             tuple(image_size / 2), angle_, 1)
         trans_map_aff = np.r_[trans_map, [[0, 0, 1]]]
         rot_map_aff = np.r_[rot_map, [[0, 0, 1]]]
         full_map = rot_map_aff.dot(trans_map_aff)
         full_map = full_map[:2, :]
-        im_data_tf = cv2.warpAffine(image, full_map, tuple(image_size), flags=cv2.INTER_NEAREST)
+        im_data_tf = cv2.warpAffine(image, full_map, tuple(
+            image_size), flags=cv2.INTER_NEAREST)
         return im_data_tf
-    
+
     @staticmethod
     def crop_resize(image, crop_size, out_size, center=None):
         if center is None:
-            center = np.array(image.shape[:2][::-1]) / 2
+            center = (np.array(image.shape[:2][::-1]) - 1) / 2
         diag = np.array(crop_size) / 2
         start = center - diag
         end = center + diag
-        image_crop = image[int(start[1]):int(end[1]),int(start[0]):int(end[0])].copy()
-        image_out = cv2.resize(image_crop, (int(out_size[0]), int(out_size[0])))
+        image_crop = image[int(start[1]):int(
+            end[1]), int(start[0]):int(end[0])].copy()
+        image_out = cv2.resize(
+            image_crop, (int(out_size[0]), int(out_size[0])))
         return image_out
 
+
 class DepthRender(object):
-    def __init__(self, dex_obj):
-        pass
+    def __init__(self, dex_obj, table, saver, config):
+        self._dex_obj = dex_obj
+        self._config = config
+        self._table = table
+        self._saver = saver
 
-    @staticmethod
-    def funcname(parameter_list):
-        pass
+    @property
+    def dex_obj(self):
+        return self._dex_obj
 
-    @staticmethod
-    def render_stable(pose, dex_obj, config):
-        """ 渲染一个稳定姿态下的所有深度图
-        1. 设置物体和桌面的位置
-        2. 设置相机的位置(随机生成多组相机位置)
-        3. 生成深度图和所有夹爪在图像坐标下的位置
-        4. 进行图像变换得到最终输出
+    def render(self):
+        mesh = self._dex_obj.mesh
+        table = self._table
+        config = self._config
+        saver = self._saver
+        render_num = config['render']['images_per_stable_pose']
+        # 对每个姿势迭代
+        for pose in self._dex_obj.poses:
+            vaild_grasps, collision = self.vaild_grasps(pose)
+            for _ in range(render_num):
+                render = ImageRender(mesh, pose, table, config)
+                depth = render.depth
+                # 对每个抓取
+                for g, col in zip(vaild_grasps, collision):
+                    quality = g.quality
+                    if quality is None:
+                        logging.error('抓取品质为None')
+                    g_2d = render.render_grasp(g)
+                    out = DataGenerator(depth, g_2d, config).output
+                    saver.add(out, g_2d, quality, col)
+
+    def vaild_grasps(self, pose):
+        """ 获取该位姿下所有有效的夹爪，和是否碰撞
         """
-        pass
+        max_angle = self._config['render']['max_grasp_approch']
+        mesh = self._dex_obj.mesh
+        grasps = self._dex_obj.grasps
+        vaild_g = []
+        collision = []
+        for g in grasps:
+            if g.get_approch(pose)[1] < max_angle:
+                vaild_g.append(g)
+                collision.append(g.check_approach(mesh, pose, self._config))
+        return vaild_g, collision

@@ -30,6 +30,12 @@ class DexObject(object):
         if not qualitis:
             self._qualitis, self._grasps = self.get_quality(
                 self._grasps, self._mesh, self._config)
+        for q, g in zip(self._qualitis, self._grasps):
+            g.quality = q
+
+    @property
+    def name(self):
+        return self._name
 
     @property
     def mesh(self):
@@ -114,6 +120,7 @@ class DexObject(object):
             grasps.append(g)
             m = grasp_group['metrics'].attrs[metrics_name]
             metrics.append(m)
+            # print(m)
         return grasps, metrics
 
     @staticmethod

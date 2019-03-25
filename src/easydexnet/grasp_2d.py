@@ -86,3 +86,11 @@ class Grasp2D(object):
         axis_dist = np.arccos(np.abs(g1.axis.dot(g2.axis)))
 
         return point_dist + alpha * axis_dist
+    
+    def to_saver(self):
+        s = np.zeros((5,))
+        s[:2] = self._center
+        s[2] = self._angle
+        s[3] = self._depth
+        s[4] = self._width_px
+        return s

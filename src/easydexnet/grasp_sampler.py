@@ -172,7 +172,7 @@ class GraspSampler_2f(object):
                     # 检查摩擦圆锥是否力闭合
                     if force_closure_2f(c[0], c[1], self._friction_coef):
                         grasps.append(g)
-                        logging.info('sample_grasps 成功生成一个抓取')
+                        logging.debug('sample_grasps 成功生成一个抓取')
 
         # 打乱样本
         random.shuffle(grasps)

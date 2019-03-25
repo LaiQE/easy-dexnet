@@ -1,6 +1,13 @@
+path:
+  logging_path: H:/Robot/easy-dexnet/test/test.log
+  hdf5_path: H:/Robot/template/test.hdf5
+  obj_path: H:/Robot/template/obj
+
+obj_list: all
+recover: 0
 # 夹爪参数,最大开度和最小开度
 grispper:
-  max_width: 0.05
+  max_width: 0.047
   min_width: 0.0
 
 # 计算夹爪距离时的默认alpha值
@@ -13,7 +20,7 @@ default_friction_coef: 0.5
 num_cone_faces: 8
 
 # 稳定姿态阈值
-stable_pose_min_p: 0.0
+stable_pose_min_p: 0.05
 
 # 接触点之间容许的最小宽度
 min_contact_dist: 0.0025
@@ -22,7 +29,7 @@ min_contact_dist: 0.0025
 grasp_dist_thresh: 0.0005
 
 # 每个物体采样的数目
-num_sample: 25
+num_sample: 150
 
 datapoints_per_file: 1000
 

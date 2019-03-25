@@ -1,3 +1,10 @@
+path:
+  logging_path: H:/Robot/easy-dexnet/test/test.log
+  data_path: H:/Robot/template/test.hdf5
+  out_path: H:/Robot/template/output
+  table_path: H:/Robot/easy-dexnet/data/table.obj
+
+obj_list: all
 # 夹爪参数,最大开度和最小开度
 grispper:
   max_width: 0.05

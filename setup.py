@@ -7,7 +7,8 @@ from setuptools import setup,find_packages
 
 requirements = [
       'trimesh', 
-      'pyrender', 
+      'pyrender',
+      'opencv-python' 
 ]
 
 setup(name='easy-dexnet',                       
