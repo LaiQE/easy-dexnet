@@ -25,3 +25,6 @@ python setup.py develop
 
 ### 参考
 http://berkeleyautomation.github.io/dex-net/
+
+
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
