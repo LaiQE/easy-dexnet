@@ -184,7 +184,7 @@ class DataGenerator(object):
         """
         angle_ = np.rad2deg(angle)
         image_size = np.array(image.shape[:2][::-1]).astype(np.int)
-        translation = image_size / 2 - center
+        translation = (image_size-1) / 2 - center
         trans_map = np.c_[np.eye(2), translation]
         rot_map = cv2.getRotationMatrix2D(
             tuple(image_size / 2), angle_, 1)

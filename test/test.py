@@ -19,7 +19,7 @@ except Exception as e:
 # 测试一下github的同步功能，这段文字来自于ubuntu
 
 
-TEST_OBJ_FILE = os.path.join(ROOT_PATH, r'data/bar_clamp.obj')
+TEST_OBJ_FILE = os.path.join(ROOT_PATH, r'data/Waterglass_800_tex.obj')
 TEST_LOG_FILE = os.path.join(ROOT_PATH, 'test/test.log')
 TEST_CFG_FILE = os.path.join(ROOT_PATH, 'config/test.yaml')
 TEST_TABLE_FILE = os.path.join(ROOT_PATH, r'data/table.obj')
@@ -107,37 +107,47 @@ def test_render():
 
     mesh = dex.BaseMesh.from_file(TEST_OBJ_FILE)
     table = dex.BaseMesh.from_file(TEST_TABLE_FILE)
-    poses = dex.DexObject.get_poses(mesh, 0.0)
-    grasps = dex.DexObject.get_grasps(mesh, config)
+    poses = dex.DexObject.get_poses(mesh, 0.05)
+    # grasps = dex.DexObject.get_grasps(mesh, config)
     
     pose = poses[0]
+    depth = []
+    rgb = []
+    for i in range(10):
+        render = dex.ImageRender(mesh, pose, table, config)
+        r, d = render.data
+        depth.append(d)
+        rgb.append(r)
+    np.save('rgb.npy', rgb)
+    np.save('depth.npy', depth)
 
-    vaild_grasps = []
-    for g in grasps:
-        if g.check_approach(mesh, pose, config) and \
-            g.get_approch(pose)[1] < 40:
-            vaild_grasps.append(g)
+
+    # vaild_grasps = []
+    # for g in grasps:
+    #     if g.check_approach(mesh, pose, config) and \
+    #         g.get_approch(pose)[1] < 40:
+    #         vaild_grasps.append(g)
     
     # vaild_grasps_T = [g.apply_transform(pose.matrix) for g in vaild_grasps]
     # mesh_T = mesh.apply_transform(pose.matrix)
     # display(mesh_T, vaild_grasps_T)
     
-    render = dex.ImageRender(mesh, pose, table, config)
+    # render = dex.ImageRender(mesh, pose, table, config)
     # for g in vaild_grasps:
     #     render.scene.add_grasp(g, render._obj_matrix)
     # pyrender.Viewer(render.scene, use_raymond_lighting=True)
-    rgb, depth = render.data
+    # rgb, depth = render.data
     # plt.imshow(rgb)
     # for g in vaild_grasps:
     #     plot_2p(*render.render_grasp(g).endpoints)
     # plt.show()
     # display(mesh_T, vaild_grasps_T)
-    for g in vaild_grasps:
-        g_2d = render.render_grasp(g)
-        out = dex.DataGenerator(rgb, g_2d, config).output
-        plt.imshow(out)
-        plot_2p([9,16], [23,16])
-        plt.show()
+    # for g in vaild_grasps:
+    #     g_2d = render.render_grasp(g)
+    #     out = dex.DataGenerator(rgb, g_2d, config).output
+    #     plt.imshow(out)
+    #     plot_2p([9,16], [23,16])
+    #     plt.show()
 
     # plt.figure()
     # plt.subplot(1,2,1)
@@ -159,15 +169,18 @@ def test_dataset():
     obj_group = f[OBJ_GROUP]
     obj_name = OBJ_GROUP.split('/')[-1]
     dex_obj = dex.DexObject.from_hdf5_group(obj_group, config, obj_name)
-    ff = h5py.File(r'H:\test.hdf5', 'a')
-    dex_obj.to_hdf5_group(ff, config)
-    # # display(dex_obj.mesh, dex_obj.grasps[:25])
+    # ff = h5py.File(r'H:\test.hdf5', 'a')
+    # dex_obj.to_hdf5_group(ff, config)
+    quality = dex_obj.qualitis[:25]
+    quality_s = (quality - np.min(quality)) / (np.max(quality) - np.min(quality))
+    display(dex_obj.mesh, dex_obj.grasps[:25], quality_s)
+    # display(dex_obj.mesh, dex_obj.grasps[:25])
     # for pose in dex_obj.poses:
     #     render = dex.ImageRender(dex_obj.mesh, pose, table, config)
     #     pyrender.Viewer(render.scene, use_raymond_lighting=True)
     #     mesh = dex_obj.mesh.apply_transform(pose.matrix)
     #     print(mesh.bounding_box())
-    ff.close()
+    # ff.close()
     f.close()
 
 def test_to_hdf5():

@@ -1,5 +1,6 @@
 import numpy as np
 
+
 class Grasp2D(object):
     """
     2D夹爪类型，夹爪投影到深度图像上的坐标.
@@ -8,24 +9,25 @@ class Grasp2D(object):
     depth : 夹爪中心点的深度
     width : 夹爪的宽度像素坐标
     """
+
     def __init__(self, center, angle, depth, width=0.0):
         self._center = center
         self._angle = angle
         self._depth = depth
         self._width_px = width
-    
+
     @property
     def center(self):
         return self._center.astype(np.int)
-    
+
     @property
     def center_float(self):
         return self._center
-    
+
     @property
     def angle(self):
         return self._angle
-    
+
     @property
     def depth(self):
         return self._depth
@@ -33,7 +35,7 @@ class Grasp2D(object):
     @property
     def axis(self):
         """ Returns the grasp axis. """
-        return np.array([np.cos(self._angle), np.sin(self._angle)])        
+        return np.array([np.cos(self._angle), np.sin(self._angle)])
 
     @property
     def endpoints(self):
@@ -86,11 +88,11 @@ class Grasp2D(object):
         axis_dist = np.arccos(np.abs(g1.axis.dot(g2.axis)))
 
         return point_dist + alpha * axis_dist
-    
+
     def to_saver(self):
         s = np.zeros((5,))
         s[:2] = self._center
-        s[2] = self._angle
-        s[3] = self._depth
+        s[2] = self._depth
+        s[3] = self._angle
         s[4] = self._width_px
         return s

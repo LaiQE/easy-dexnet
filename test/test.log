@@ -1,3 +1,349 @@
-2019-03-25 17:55:55,258 - INFO - depth saver: 共存储了3645个数据
-2019-03-25 17:55:55,262 - INFO - hand_pose saver: 共存储了3645个数据
-2019-03-25 17:55:55,265 - INFO - quality saver: 共存储了3645个数据
+2019-05-09 15:51:52,272 - DEBUG - loaded mesh using load_wavefront
+2019-05-09 15:51:52,272 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-05-09 15:51:52,272 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,272 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,272 - DEBUG - area_faces was not in cache, executed in 0.000000
+2019-05-09 15:51:52,272 - DEBUG - load_mesh executed in 0.0000 seconds.
+2019-05-09 15:51:52,413 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-05-09 15:51:52,413 - DEBUG - edges was not in cache, executed in 0.000000
+2019-05-09 15:51:52,413 - DEBUG - edges_sorted was not in cache, executed in 0.000000
+2019-05-09 15:51:52,413 - DEBUG - is_watertight was not in cache, executed in 0.000000
+2019-05-09 15:51:52,413 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,413 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,413 - DEBUG - mass_properties was not in cache, executed in 0.000000
+2019-05-09 15:51:52,585 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-05-09 15:51:52,585 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,585 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,585 - DEBUG - area_faces was not in cache, executed in 0.000000
+2019-05-09 15:51:52,601 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-05-09 15:51:52,601 - DEBUG - edges was not in cache, executed in 0.000000
+2019-05-09 15:51:52,601 - DEBUG - edges_sorted was not in cache, executed in 0.000000
+2019-05-09 15:51:52,601 - DEBUG - is_watertight was not in cache, executed in 0.000000
+2019-05-09 15:51:52,601 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,601 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,601 - DEBUG - mass_properties was not in cache, executed in 0.000000
+2019-05-09 15:51:52,601 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,601 - DEBUG - generating face normals
+2019-05-09 15:51:52,601 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,601 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,601 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,601 - DEBUG - generating face normals
+2019-05-09 15:51:52,601 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,617 - DEBUG - triangles_cross was not in cache, executed in 0.015625
+2019-05-09 15:51:52,617 - DEBUG - vertex_normals was not in cache, executed in 0.015625
+2019-05-09 15:51:52,617 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,617 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,617 - DEBUG - generating face normals
+2019-05-09 15:51:52,617 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,617 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,617 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,617 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,617 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,617 - DEBUG - generating face normals
+2019-05-09 15:51:52,617 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,617 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,617 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,632 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,632 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,632 - DEBUG - generating face normals
+2019-05-09 15:51:52,632 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,632 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,632 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,632 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,632 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,632 - DEBUG - generating face normals
+2019-05-09 15:51:52,632 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,632 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,632 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,648 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,648 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,648 - DEBUG - generating face normals
+2019-05-09 15:51:52,648 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,648 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,648 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,648 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,663 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,663 - DEBUG - generating face normals
+2019-05-09 15:51:52,663 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,663 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,663 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,663 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,663 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,663 - DEBUG - generating face normals
+2019-05-09 15:51:52,663 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,663 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,663 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,663 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,663 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,663 - DEBUG - generating face normals
+2019-05-09 15:51:52,663 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,679 - DEBUG - triangles_cross was not in cache, executed in 0.015626
+2019-05-09 15:51:52,679 - DEBUG - vertex_normals was not in cache, executed in 0.015626
+2019-05-09 15:51:52,679 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,679 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,679 - DEBUG - generating face normals
+2019-05-09 15:51:52,679 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,679 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,679 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,679 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,679 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,679 - DEBUG - generating face normals
+2019-05-09 15:51:52,679 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,679 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,679 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,695 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,695 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,695 - DEBUG - generating face normals
+2019-05-09 15:51:52,695 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,695 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,695 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,695 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,695 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,695 - DEBUG - generating face normals
+2019-05-09 15:51:52,695 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,695 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,695 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,710 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,710 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,710 - DEBUG - generating face normals
+2019-05-09 15:51:52,710 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,710 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,710 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,710 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,710 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,710 - DEBUG - generating face normals
+2019-05-09 15:51:52,710 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,710 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,710 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,726 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,726 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,726 - DEBUG - generating face normals
+2019-05-09 15:51:52,726 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,726 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,726 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,726 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,726 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,726 - DEBUG - generating face normals
+2019-05-09 15:51:52,726 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,726 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,726 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,742 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,742 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,742 - DEBUG - generating face normals
+2019-05-09 15:51:52,742 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,742 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,742 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,742 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,742 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,742 - DEBUG - generating face normals
+2019-05-09 15:51:52,742 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,742 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,742 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,757 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,757 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,757 - DEBUG - generating face normals
+2019-05-09 15:51:52,757 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,757 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,757 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,757 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,757 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,757 - DEBUG - generating face normals
+2019-05-09 15:51:52,757 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,757 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,757 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,773 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,773 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,773 - DEBUG - generating face normals
+2019-05-09 15:51:52,773 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,773 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,773 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,773 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,773 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,773 - DEBUG - generating face normals
+2019-05-09 15:51:52,773 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,773 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,773 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,788 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,788 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,788 - DEBUG - generating face normals
+2019-05-09 15:51:52,788 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,788 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,788 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,788 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,788 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,788 - DEBUG - generating face normals
+2019-05-09 15:51:52,788 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,788 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,788 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,788 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,788 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,788 - DEBUG - generating face normals
+2019-05-09 15:51:52,788 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,804 - DEBUG - triangles_cross was not in cache, executed in 0.015876
+2019-05-09 15:51:52,805 - DEBUG - vertex_normals was not in cache, executed in 0.016874
+2019-05-09 15:51:52,809 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,810 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,810 - DEBUG - generating face normals
+2019-05-09 15:51:52,811 - DEBUG - triangles was not in cache, executed in 0.000999
+2019-05-09 15:51:52,811 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,812 - DEBUG - vertex_normals was not in cache, executed in 0.002999
+2019-05-09 15:51:52,817 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,818 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,818 - DEBUG - generating face normals
+2019-05-09 15:51:52,819 - DEBUG - triangles was not in cache, executed in 0.000999
+2019-05-09 15:51:52,819 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,820 - DEBUG - vertex_normals was not in cache, executed in 0.002215
+2019-05-09 15:51:52,820 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,820 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,820 - DEBUG - generating face normals
+2019-05-09 15:51:52,820 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,820 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,820 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,836 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,836 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,836 - DEBUG - generating face normals
+2019-05-09 15:51:52,836 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,836 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,836 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,836 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,836 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,836 - DEBUG - generating face normals
+2019-05-09 15:51:52,836 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,836 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,836 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,852 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,852 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,852 - DEBUG - generating face normals
+2019-05-09 15:51:52,852 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,852 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,852 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,852 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,852 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,852 - DEBUG - generating face normals
+2019-05-09 15:51:52,852 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,852 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,852 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,867 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,867 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,867 - DEBUG - generating face normals
+2019-05-09 15:51:52,867 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,867 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,867 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,867 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,867 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,867 - DEBUG - generating face normals
+2019-05-09 15:51:52,867 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,867 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,867 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,883 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,883 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,883 - DEBUG - generating face normals
+2019-05-09 15:51:52,883 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,883 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,883 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,883 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,883 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,883 - DEBUG - generating face normals
+2019-05-09 15:51:52,883 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,883 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,883 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,883 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,899 - DEBUG - faces_sparse was not in cache, executed in 0.015609
+2019-05-09 15:51:52,899 - DEBUG - generating face normals
+2019-05-09 15:51:52,899 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,899 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,899 - DEBUG - vertex_normals was not in cache, executed in 0.015609
+2019-05-09 15:51:52,899 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,899 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,899 - DEBUG - generating face normals
+2019-05-09 15:51:52,899 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,899 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,899 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,899 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,899 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,899 - DEBUG - generating face normals
+2019-05-09 15:51:52,899 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,899 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,914 - DEBUG - vertex_normals was not in cache, executed in 0.015631
+2019-05-09 15:51:52,914 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,914 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,914 - DEBUG - generating face normals
+2019-05-09 15:51:52,914 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,914 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,914 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,914 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,914 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,914 - DEBUG - generating face normals
+2019-05-09 15:51:52,914 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,914 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,930 - DEBUG - vertex_normals was not in cache, executed in 0.015637
+2019-05-09 15:51:52,930 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,930 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,930 - DEBUG - generating face normals
+2019-05-09 15:51:52,930 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,930 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,930 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,930 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,930 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,930 - DEBUG - generating face normals
+2019-05-09 15:51:52,930 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,930 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,930 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,945 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,945 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,945 - DEBUG - generating face normals
+2019-05-09 15:51:52,945 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,945 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,945 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,945 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,945 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,945 - DEBUG - generating face normals
+2019-05-09 15:51:52,945 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,945 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,945 - DEBUG - vertex_normals was not in cache, executed in 0.000000
+2019-05-09 15:51:52,963 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,964 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,965 - DEBUG - generating face normals
+2019-05-09 15:51:52,965 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,966 - DEBUG - triangles_cross was not in cache, executed in 0.001000
+2019-05-09 15:51:52,967 - DEBUG - vertex_normals was not in cache, executed in 0.002980
+2019-05-09 15:51:52,972 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,973 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,973 - DEBUG - generating face normals
+2019-05-09 15:51:52,974 - DEBUG - triangles was not in cache, executed in 0.000999
+2019-05-09 15:51:52,974 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,975 - DEBUG - vertex_normals was not in cache, executed in 0.001998
+2019-05-09 15:51:52,981 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,982 - DEBUG - faces_sparse was not in cache, executed in 0.000999
+2019-05-09 15:51:52,982 - DEBUG - generating face normals
+2019-05-09 15:51:52,982 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,983 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,983 - DEBUG - vertex_normals was not in cache, executed in 0.002979
+2019-05-09 15:51:52,988 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:52,989 - DEBUG - faces_sparse was not in cache, executed in 0.000000
+2019-05-09 15:51:52,989 - DEBUG - generating face normals
+2019-05-09 15:51:52,990 - DEBUG - triangles was not in cache, executed in 0.001000
+2019-05-09 15:51:52,990 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,990 - DEBUG - vertex_normals was not in cache, executed in 0.001980
+2019-05-09 15:51:52,996 - DEBUG - apply_tranform passed identity matrix
+2019-05-09 15:51:52,997 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-05-09 15:51:52,998 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:52,998 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:52,999 - DEBUG - mass_properties was not in cache, executed in 0.000999
+2019-05-09 15:51:52,999 - DEBUG - 3 items cleared from cache: ['triangles', 'triangles_cross', 'mass_properties']
+2019-05-09 15:51:53,001 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:53,002 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-05-09 15:51:53,003 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:53,003 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:53,004 - DEBUG - mass_properties was not in cache, executed in 0.001000
+2019-05-09 15:51:53,004 - DEBUG - 3 items cleared from cache: ['triangles', 'triangles_cross', 'mass_properties']
+2019-05-09 15:51:53,005 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:53,006 - DEBUG - is_empty was not in cache, executed in 0.000000
+2019-05-09 15:51:53,006 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:53,006 - DEBUG - triangles_cross was not in cache, executed in 0.000000
+2019-05-09 15:51:53,006 - DEBUG - mass_properties was not in cache, executed in 0.000000
+2019-05-09 15:51:53,006 - DEBUG - 3 items cleared from cache: ['triangles', 'triangles_cross', 'mass_properties']
+2019-05-09 15:51:53,006 - DEBUG - mesh transformed by matrix
+2019-05-09 15:51:53,006 - DEBUG - generating face normals
+2019-05-09 15:51:53,006 - DEBUG - triangles was not in cache, executed in 0.000000
+2019-05-09 15:51:53,006 - DEBUG - triangles_cross was not in cache, executed in 0.000000

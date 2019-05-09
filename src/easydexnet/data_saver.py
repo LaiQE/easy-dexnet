@@ -37,7 +37,7 @@ class DataSaver(object):
             self._buffer = self._buffer[:self._counter]
             self.save()
         total_num = self._counter + (self._save_counter - 1) * self._max
-        logging.info(self._name+' saver: 共存储了%d个数据'%(total_num))
+        logging.info(self._name+' saver: 共存储了%d个数据' % (total_num))
 
 
 class DexSaver(object):
